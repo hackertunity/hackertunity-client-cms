@@ -31,7 +31,7 @@ const Footer = class extends React.Component {
 										<li>
 											<Link
 												className="navbar-item"
-												to="/about"
+												to="/our-team"
 											>
 												The Team
 											</Link>
@@ -39,7 +39,7 @@ const Footer = class extends React.Component {
 										<li>
 											<Link
 												className="navbar-item"
-												to="/products"
+												to="/acknowledgements"
 											>
 												Acknowledgements
 											</Link>
@@ -53,7 +53,7 @@ const Footer = class extends React.Component {
 										<li>
 											<Link
 												className="navbar-item"
-												to="/blog"
+												to="/training-resources"
 											>
 												Training Resources
 											</Link>
@@ -61,7 +61,7 @@ const Footer = class extends React.Component {
 										<li>
 											<Link
 												className="navbar-item"
-												to="/contact"
+												to="/blog"
 											>
 												Job Feed
 											</Link>
@@ -69,7 +69,7 @@ const Footer = class extends React.Component {
 										<li>
 											<Link
 												className="navbar-item"
-												to="/contact"
+												to="/working-remotely"
 											>
 												Working Remotely
 											</Link>
@@ -77,7 +77,7 @@ const Footer = class extends React.Component {
 										<li>
 											<Link
 												className="navbar-item"
-												to="/contact"
+												to="/small-businesses"
 											>
 												Small Businesses
 											</Link>
