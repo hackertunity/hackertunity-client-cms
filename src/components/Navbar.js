@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import github from '../img/github-icon.svg';
-import logo from '../img/logo.svg';
+import logo from '../img/brand/hackertunity_logo.png';
 
 const Navbar = class extends React.Component {
 	constructor(props) {
@@ -42,12 +41,7 @@ const Navbar = class extends React.Component {
 				<div className="container">
 					<div className="navbar-brand">
 						<Link to="/" className="navbar-item" title="Logo">
-							TEST DEPLOYMENT
-							<img
-								src={logo}
-								alt="Kaldi"
-								style={{ width: '88px' }}
-							/>
+							<img src={logo} alt="Hackertunity inc." />
 						</Link>
 						{/* Hamburger menu */}
 						<div
@@ -66,34 +60,44 @@ const Navbar = class extends React.Component {
 					>
 						<div className="navbar-start has-text-centered">
 							<Link className="navbar-item" to="/about">
-								About
+								Our Mission
 							</Link>
 							<Link className="navbar-item" to="/products">
-								Products
+								The Team
 							</Link>
 							<Link className="navbar-item" to="/blog">
-								Blog
+								Acknowledgements
 							</Link>
 							<Link className="navbar-item" to="/contact">
-								Contact
+								Training Resources
 							</Link>
 							<Link
 								className="navbar-item"
 								to="/contact/examples"
 							>
-								Form Examples
+								Job Feed
+							</Link>
+							<Link
+								className="navbar-item"
+								to="/contact/examples"
+							>
+								Working Remotely
+							</Link>
+							<Link
+								className="navbar-item"
+								to="/contact/examples"
+							>
+								Small Businessesf
 							</Link>
 						</div>
 						<div className="navbar-end has-text-centered">
 							<a
-								className="navbar-item"
+								className="navbar-item secondary-nav"
 								href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<span className="icon">
-									<img src={github} alt="Github" />
-								</span>
+								<span className="icon place-holder"></span>
 							</a>
 						</div>
 					</div>
