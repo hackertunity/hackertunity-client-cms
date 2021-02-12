@@ -6,6 +6,7 @@ module.exports = {
 			{
 				name: 'About Us',
 				path: '',
+				topLink: false,
 				subMenu: [
 					{
 						name: 'Our Mission',
@@ -24,6 +25,7 @@ module.exports = {
 			{
 				name: 'Career Catalysts',
 				path: '',
+				topLink: false,
 				subMenu: [
 					{
 						name: 'Training Resources',
@@ -38,6 +40,10 @@ module.exports = {
 						path: '',
 					},
 				],
+			},
+			{
+				name: 'SINGLE_LINK_TEST',
+				path: '',
 			},
 		],
 	},
