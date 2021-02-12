@@ -2,6 +2,44 @@ module.exports = {
 	siteMetadata: {
 		title: 'Hackertunity, Inc.',
 		description: 'End Poverty. Empower the people. Enrich tech.',
+		menuLinks: [
+			{
+				name: 'About Us',
+				link: '',
+				subMenu: [
+					{
+						name: 'Our Mission',
+						link: '',
+					},
+					{
+						name: 'The Team',
+						link: '',
+					},
+					{
+						name: 'Acknowledgements',
+						link: '',
+					},
+				],
+			},
+			{
+				name: 'Career Catalysts',
+				link: '',
+				subMenu: [
+					{
+						name: 'Training Resources',
+						link: '',
+					},
+					{
+						name: 'Job Feed',
+						link: '',
+					},
+					{
+						name: 'Working Remotely',
+						link: '',
+					},
+				],
+			},
+		],
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
