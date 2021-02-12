@@ -1,17 +1,40 @@
+#navMenu
+	background-color: #253338;
+	
 .navbar-start
 	// border: 1px solid red;
 
 .navbar-item
 	float: left;
 	line-height: 1.75;
-	padding: 1rem 0.75rem;
+	padding: 1rem 0;
+	min-width: 200px;
 	// border: 1px solid green;
 
 .navbar-item-link
-	color: #363636
+	// color: #363636
+	color: #cccccc
+	width: 100%;
+
+.navbar-item-link:hover
+	color: #4d7fa8;
 
 .navbar-submenu
 	display: none;
+
+.sub-item
+	padding: 1rem 0;
+
+.navbar-submenu.active
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 60px;
+	background-color: #253338;
+	// border: 1px solid red;
+
+///
+///
 
 @media screen and (max-width: 1023px)
 	// .navbar-menu.is-active
@@ -27,5 +50,14 @@
 		padding: 1rem 0;
 		border-bottom: 1px solid #ddd
 
-	.navbar-submenu
+	.navbar-submenu, .navbar-submenu.active
 		display: block;
+		position: relative;
+		top: 0px;
+
+		.sub-item
+			padding: 0 0;
+
+	.menu-static-header
+		font-weight: bold;
+		letter-spacing: 2px;
