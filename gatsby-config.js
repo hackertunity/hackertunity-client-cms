@@ -5,37 +5,37 @@ module.exports = {
 		menuLinks: [
 			{
 				name: 'About Us',
-				link: '',
+				path: '',
 				subMenu: [
 					{
 						name: 'Our Mission',
-						link: '',
+						path: '',
 					},
 					{
 						name: 'The Team',
-						link: '',
+						path: '',
 					},
 					{
 						name: 'Acknowledgements',
-						link: '',
+						path: '',
 					},
 				],
 			},
 			{
 				name: 'Career Catalysts',
-				link: '',
+				path: '',
 				subMenu: [
 					{
 						name: 'Training Resources',
-						link: '',
+						path: '',
 					},
 					{
 						name: 'Job Feed',
-						link: '',
+						path: '',
 					},
 					{
 						name: 'Working Remotely',
-						link: '',
+						path: '',
 					},
 				],
 			},

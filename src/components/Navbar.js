@@ -10,10 +10,10 @@ const MenuLinksQuery = graphql`
 			siteMetadata {
 				menuLinks {
 					name
-					link
+					path
 					subMenu {
-						link
 						name
+						path
 					}
 				}
 			}
@@ -29,7 +29,7 @@ const NavBar = () => {
 		},
 	} = useStaticQuery(MenuLinksQuery);
 
-	console.log('>> TEST_MENU_LINKS_QUERY_DATA:', menuLinks);
+	// console.log('>> TEST_MENU_LINKS_QUERY_DATA:', menuLinks);
 
 	// COMPONENT STATE
 	const [active, setActive] = useState(false);
