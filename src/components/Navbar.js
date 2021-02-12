@@ -60,7 +60,7 @@ const NavBar = () => {
 					<div
 						className={`navbar-burger burger ${navBarActiveClass}`}
 						data-target="navMenu"
-						onClick={() => this.toggleHamburger()}
+						onClick={() => toggleHamburger()}
 					>
 						<span />
 						<span />
