@@ -12,6 +12,7 @@ const MenuLinksQuery = graphql`
 				menuLinks {
 					name
 					path
+					topLink
 					subMenu {
 						name
 						path
