@@ -113,12 +113,13 @@ exports.createSchemaCustomization = ({ actions }) => {
 		}
 		type MenuLinks {
 			name: String!
-			link: String!
+			path: String!
+			topLink: Boolean
 			subMenu: [SubMenu] @defaultArray
 		}
 		type SubMenu {
 			name: String
-			link: String
+			path: String
 		}
 	`;
 

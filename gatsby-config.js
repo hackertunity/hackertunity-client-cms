@@ -41,10 +41,10 @@ module.exports = {
 					},
 				],
 			},
-			{
-				name: 'SINGLE_LINK_TEST',
-				path: '',
-			},
+			// {
+			// 	name: 'SINGLE_LINK_TEST',
+			// 	path: '',
+			// },
 		],
 	},
 	plugins: [
