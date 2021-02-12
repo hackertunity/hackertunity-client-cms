@@ -6,7 +6,7 @@ const SubMenu = ({ menu }) => {
 
 	let render;
 
-	if (menu.subMenu.length > 0) {
+	if (menu.subMenu && menu.subMenu.length > 0) {
 		if (menu.topLink) {
 			// SUB-MENU /w TOP LINK
 			// TODO: <<<
@@ -14,9 +14,25 @@ const SubMenu = ({ menu }) => {
 			// SUB-MENU /W TOP STATIC
 			render = (
 				<li className="navbar-item">
-					<Link className="navbar-item-link" to={menu.path}>
-						STATIC_SUB_MENU_TBD
+					<Link
+						className="navbar-item-link"
+						to={menu.path}
+						aria-haspopup={true}
+					>
+						{menu.name}
 					</Link>
+					<ul className="navbar-submenu" aria-label="submenu">
+						{menu.subMenu.map((subLink, i) => (
+							<li className="nav-bar-item sub-item" key={i}>
+								<Link
+									className="navbar-item-link sub-item-link"
+									to={subLink.path}
+								>
+									{subLink.name}
+								</Link>
+							</li>
+						))}
+					</ul>
 				</li>
 			);
 		}
