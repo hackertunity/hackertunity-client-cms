@@ -10,15 +10,15 @@ module.exports = {
 				subMenu: [
 					{
 						name: 'Our Mission',
-						path: '',
+						path: '/our-mission',
 					},
 					{
 						name: 'The Team',
-						path: '',
+						path: '/our-team',
 					},
 					{
 						name: 'Acknowledgements',
-						path: '',
+						path: '/acknowledgements',
 					},
 				],
 			},
@@ -29,15 +29,15 @@ module.exports = {
 				subMenu: [
 					{
 						name: 'Training Resources',
-						path: '',
+						path: '/training-resources',
 					},
 					{
 						name: 'Job Feed',
-						path: '',
+						path: '/blog',
 					},
 					{
 						name: 'Working Remotely',
-						path: '',
+						path: '/working-remotely',
 					},
 				],
 			},
