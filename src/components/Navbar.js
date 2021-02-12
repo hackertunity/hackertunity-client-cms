@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'gatsby';
 import logo from '../img/brand/hackertunity_logo.png';
+import { Link } from 'gatsby';
+import SubMenu from './Navbar/SubMenu';
 
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -70,40 +71,42 @@ const NavBar = () => {
 				<div id="navMenu" className={`navbar-menu ${navBarActiveClass}`}>
 					<div className="navbar-start has-text-centered">
 						<ul>
-							{menuLinks.map((link) => (
-								<li className="navbar-item" key={link.name}>
-									<Link
-										className="navbar-item-link"
-										to={link.path}
-										aria-haspopup={
-											link.subMenu && link.subMenu.length > 0
-												? true
-												: false
-										}
-									>
-										{link.name}
-									</Link>
-									{link.subMenu && link.subMenu.length > 0 ? (
-										<ul
-											className="navbar-submenu"
-											aria-label="submenu"
-										>
-											{link.subMenu.map((subLink) => (
-												<li
-													className="navbar-item sub-item"
-													key={subLink.name}
-												>
-													<Link
-														className="navbar-item-link sub-item-link"
-														to={subLink.path}
-													>
-														{subLink.name}
-													</Link>
-												</li>
-											))}
-										</ul>
-									) : null}
-								</li>
+							{menuLinks.map((menu, i) => (
+								<SubMenu menu={menu} key={i} />
+
+								// <li className="navbar-item" key={link.name}>
+								// 	<Link
+								// 		className="navbar-item-link"
+								// 		to={link.path}
+								// 		aria-haspopup={
+								// 			link.subMenu && link.subMenu.length > 0
+								// 				? true
+								// 				: false
+								// 		}
+								// 	>
+								// 		{link.name}
+								// 	</Link>
+								// 	{link.subMenu && link.subMenu.length > 0 ? (
+								// 		<ul
+								// 			className="navbar-submenu"
+								// 			aria-label="submenu"
+								// 		>
+								// 			{link.subMenu.map((subLink) => (
+								// 				<li
+								// 					className="navbar-item sub-item"
+								// 					key={subLink.name}
+								// 				>
+								// 					<Link
+								// 						className="navbar-item-link sub-item-link"
+								// 						to={subLink.path}
+								// 					>
+								// 						{subLink.name}
+								// 					</Link>
+								// 				</li>
+								// 			))}
+								// 		</ul>
+								// 	) : null}
+								// </li>
 							))}
 						</ul>
 					</div>
