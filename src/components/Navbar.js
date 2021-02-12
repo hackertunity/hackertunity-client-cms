@@ -68,31 +68,45 @@ const NavBar = () => {
 					</div>
 				</div>
 				<div id="navMenu" className={`navbar-menu ${navBarActiveClass}`}>
-					<ul>
-						{menuLinks.map((link) => (
-							<li key={link.name}>
-								<a
-									href={link.link}
-									aria-haspopup={
-										link.subMenu && link.subMenu.length > 0
-											? true
-											: false
-									}
-								>
-									{link.name}
-								</a>
-								{link.subMenu && link.subMenu.length > 0 ? (
-									<ul aria-label="submenu">
-										{link.subMenu.map((subLink) => (
-											<li key={subLink.name}>
-												<a href={subLink.link}>{subLink.name}</a>
-											</li>
-										))}
-									</ul>
-								) : null}
-							</li>
-						))}
-					</ul>
+					<div className="navbar-start has-text-centered">
+						<ul>
+							{menuLinks.map((link) => (
+								<li className="navbar-item" key={link.name}>
+									<Link
+										className="navbar-item-link"
+										to={link.path}
+										aria-haspopup={
+											link.subMenu && link.subMenu.length > 0
+												? true
+												: false
+										}
+									>
+										{link.name}
+									</Link>
+									{link.subMenu && link.subMenu.length > 0 ? (
+										<ul
+											className="navbar-submenu"
+											aria-label="submenu"
+										>
+											{link.subMenu.map((subLink) => (
+												<li
+													className="navbar-item sub-item"
+													key={subLink.name}
+												>
+													<Link
+														className="navbar-item-link sub-item-link"
+														to={subLink.path}
+													>
+														{subLink.name}
+													</Link>
+												</li>
+											))}
+										</ul>
+									) : null}
+								</li>
+							))}
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>
