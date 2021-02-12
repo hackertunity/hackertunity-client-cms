@@ -14,13 +14,12 @@ const SubMenu = ({ menu }) => {
 			// SUB-MENU /W TOP STATIC
 			render = (
 				<li className="navbar-item">
-					<Link
-						className="navbar-item-link"
-						to={menu.path}
+					<div
+						className="navbar-item-link menu-static-header"
 						aria-haspopup={true}
 					>
 						{menu.name}
-					</Link>
+					</div>
 					<ul className="navbar-submenu" aria-label="submenu">
 						{menu.subMenu.map((subLink, i) => (
 							<li className="nav-bar-item sub-item" key={i}>

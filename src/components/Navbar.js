@@ -74,40 +74,6 @@ const NavBar = () => {
 						<ul>
 							{menuLinks.map((menu, i) => (
 								<SubMenu menu={menu} key={i} />
-
-								// <li className="navbar-item" key={link.name}>
-								// 	<Link
-								// 		className="navbar-item-link"
-								// 		to={link.path}
-								// 		aria-haspopup={
-								// 			link.subMenu && link.subMenu.length > 0
-								// 				? true
-								// 				: false
-								// 		}
-								// 	>
-								// 		{link.name}
-								// 	</Link>
-								// 	{link.subMenu && link.subMenu.length > 0 ? (
-								// 		<ul
-								// 			className="navbar-submenu"
-								// 			aria-label="submenu"
-								// 		>
-								// 			{link.subMenu.map((subLink) => (
-								// 				<li
-								// 					className="navbar-item sub-item"
-								// 					key={subLink.name}
-								// 				>
-								// 					<Link
-								// 						className="navbar-item-link sub-item-link"
-								// 						to={subLink.path}
-								// 					>
-								// 						{subLink.name}
-								// 					</Link>
-								// 				</li>
-								// 			))}
-								// 		</ul>
-								// 	) : null}
-								// </li>
 							))}
 						</ul>
 					</div>
