@@ -1,114 +1,101 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
-import logo from '../img/brand/hackertunity_logo.png';
+import logo from '../img/logo.svg';
 
-const Navbar = class extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			active: false,
-			navBarActiveClass: '',
-		};
-	}
+import { graphql, useStaticQuery } from 'gatsby';
 
-	toggleHamburger = () => {
-		// toggle the active boolean in the state
-		this.setState(
-			{
-				active: !this.state.active,
-			},
-			// after state has been updated,
-			() => {
-				// set the class in state for the navbar accordingly
-				this.state.active
-					? this.setState({
-							navBarActiveClass: 'is-active',
-					  })
-					: this.setState({
-							navBarActiveClass: '',
-					  });
+const MenuLinksQuery = graphql`
+	query MenuLinksQuery {
+		site {
+			siteMetadata {
+				menuLinks {
+					name
+					link
+					subMenu {
+						link
+						name
+					}
+				}
 			}
-		);
+		}
+	}
+`;
+
+const NavBar = () => {
+	// NAV LINK DATA
+	const {
+		site: {
+			siteMetadata: { menuLinks },
+		},
+	} = useStaticQuery(MenuLinksQuery);
+
+	console.log('>> TEST_MENU_LINKS_QUERY_DATA:', menuLinks);
+
+	// COMPONENT STATE
+	const [active, setActive] = useState(false);
+	const [navBarActiveClass, setNavBarActiveClass] = useState('');
+
+	const toggleHamburger = () => {
+		setActive(!active);
 	};
 
-	render() {
-		return (
-			<nav
-				className="navbar is-transparent"
-				role="navigation"
-				aria-label="main-navigation"
-			>
-				<div className="container">
-					<div className="navbar-brand">
-						<Link to="/" className="navbar-item" title="Logo">
-							<img src={logo} alt="Hackertunity inc." />
-							Hackertunity, Inc.
-						</Link>
-						{/* Hamburger menu */}
-						<div
-							className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-							data-target="navMenu"
-							onClick={() => this.toggleHamburger()}
-						>
-							<span />
-							<span />
-							<span />
-						</div>
-					</div>
+	useEffect(() => {
+		active ? setNavBarActiveClass('is-active') : setNavBarActiveClass('');
+	});
+
+	// COMPONENT RENDER
+	return (
+		<nav
+			className="navbar is-transparent"
+			role="navigation"
+			aria-label="main-navigation"
+		>
+			<div className="container">
+				<div className="navbar-brand">
+					<Link to="/" className="navbar-item" title="Logo">
+						<img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+					</Link>
+					{/* Hamburger menu */}
 					<div
-						id="navMenu"
-						className={`navbar-menu ${this.state.navBarActiveClass}`}
+						className={`navbar-burger burger ${navBarActiveClass}`}
+						data-target="navMenu"
+						onClick={toggleHamburger}
 					>
-						<div className="navbar-start has-text-centered">
-							<Link className="navbar-item" to="/our-mission">
-								Our Mission
-							</Link>
-							<Link className="navbar-item" to="/our-team">
-								The Team
-							</Link>
-							<Link
-								className="navbar-item"
-								to="/acknowledgements"
-							>
-								Acknowledgements
-							</Link>
-							<Link
-								className="navbar-item"
-								to="/training-resources"
-							>
-								Training Resources
-							</Link>
-							<Link className="navbar-item" to="/blog">
-								Job Feed
-							</Link>
-							<Link
-								className="navbar-item"
-								to="/working-remotely"
-							>
-								Working Remotely
-							</Link>
-							<Link
-								className="navbar-item"
-								to="/small-businesses"
-							>
-								Small Businesses
-							</Link>
-						</div>
-						<div className="navbar-end has-text-centered">
-							<a
-								className="navbar-item secondary-nav"
-								href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<span className="icon place-holder"></span>
-							</a>
-						</div>
+						<span />
+						<span />
+						<span />
 					</div>
 				</div>
-			</nav>
-		);
-	}
+				<div id="navMenu" className={`navbar-menu ${navBarActiveClass}`}>
+					<ul>
+						{menuLinks.map((link) => (
+							<li key={link.name}>
+								<a
+									href={link.link}
+									aria-haspopup={
+										link.subMenu && link.subMenu.length > 0
+											? true
+											: false
+									}
+								>
+									{link.name}
+								</a>
+								{link.subMenu && link.subMenu.length > 0 ? (
+									<ul aria-label="submenu">
+										{link.subMenu.map((subLink) => (
+											<li key={subLink.name}>
+												<a href={subLink.link}>{subLink.name}</a>
+											</li>
+										))}
+									</ul>
+								) : null}
+							</li>
+						))}
+					</ul>
+				</div>
+			</div>
+		</nav>
+	);
 };
 
-export default Navbar;
+export default NavBar;
