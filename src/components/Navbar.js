@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'gatsby';
-import logo from '../img/logo.svg';
+import logo from '../img/brand/hackertunity_logo.png';
 
 import { graphql, useStaticQuery } from 'gatsby';
 
@@ -53,13 +53,14 @@ const NavBar = () => {
 			<div className="container">
 				<div className="navbar-brand">
 					<Link to="/" className="navbar-item" title="Logo">
-						<img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+						<img src={logo} alt="Hackertunity inc." />
+						Hackertunity, Inc.
 					</Link>
 					{/* Hamburger menu */}
 					<div
 						className={`navbar-burger burger ${navBarActiveClass}`}
 						data-target="navMenu"
-						onClick={toggleHamburger}
+						onClick={() => this.toggleHamburger()}
 					>
 						<span />
 						<span />
