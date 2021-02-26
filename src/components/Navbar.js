@@ -55,7 +55,7 @@ const NavBar = () => {
 			<div className="container">
 				<div className="navbar-brand">
 					<Link to="/" className="navbar-item" title="Logo">
-						<img src={logo} alt="Hackertunity inc." />
+						<img className="logo" src={logo} alt="Hackertunity inc." />
 						Hackertunity, Inc.
 					</Link>
 					{/* Hamburger menu */}
