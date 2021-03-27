@@ -60,6 +60,8 @@ collections:
                   default: 'default-page',
                }
              - { label: Title, name: title, widget: string }
+             - { label: Heading, name: heading, widget: string }
+             - { label: Body, name: body, widget: 'markdown' }
         - file: 'src/pages/about/index.md'
           label: 'About'
           name: 'about'

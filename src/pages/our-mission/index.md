@@ -2,6 +2,7 @@
 templateKey: 'default-page'
 path: /our-mission
 title: Our Mission & What we are about
+heading: Test heading text
 ---
 
 ### Point One
