@@ -15,6 +15,7 @@ CMS.registerPreviewTemplate('index', IndexPagePreview);
 
 // ABOUT US
 CMS.registerPreviewTemplate('our-mission', DefaultPagePreview);
+CMS.registerPreviewTemplate('acknowledgements', DefaultPagePreview);
 
 CMS.registerPreviewTemplate('blog', BlogPostPreview);
 

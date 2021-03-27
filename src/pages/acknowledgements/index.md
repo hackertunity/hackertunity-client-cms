@@ -2,6 +2,7 @@
 templateKey: 'default-page'
 path: /acknowledgements
 title: Our Acknowledgemets
+heading: Special Thanks to
 ---
 
 ### Point One
