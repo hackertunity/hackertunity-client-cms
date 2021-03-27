@@ -62,6 +62,19 @@ collections:
              - { label: Title, name: title, widget: string }
              - { label: Heading, name: heading, widget: string }
              - { label: Body, name: body, widget: 'markdown' }
+        - file: 'src/pages/our-team/index.md'
+          label: 'The Team'
+          name: 'our-team'
+          fields:
+             - {
+                  label: 'Template Key',
+                  name: 'templateKey',
+                  widget: 'hidden',
+                  default: 'team-page',
+               }
+             - { label: Title, name: title, widget: string }
+             - { label: Heading, name: heading, widget: string }
+
         - file: 'src/pages/acknowledgements/index.md'
           label: 'Acknowledgements'
           name: 'acknowledgements'
