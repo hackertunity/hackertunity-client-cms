@@ -1,5 +1,5 @@
 ---
-heading: Great coffee with a conscience
+heading: Hackertunity, Inc.
 subheading: Support sustainable farming while enjoying a cup
 templateKey: index-page
 mainpitch:
@@ -44,7 +44,7 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
-tagline: derp
+tagline: End poverty. Empower the people. Enrich tech.
 title: Great coffee with a conscience
 main:
   heading: Great coffee with no compromises
