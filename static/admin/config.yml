@@ -76,6 +76,60 @@ collections:
                }
              - { label: Title, name: title, widget: string }
              - { label: Heading, name: heading, widget: string }
+             - {
+                  label: Organization,
+                  name: organization,
+                  widget: 'object',
+                  fields:
+                     [
+                        {
+                           label: Team Group,
+                           name: team-groups,
+                           widget: list,
+                           fields:
+                              [
+                                 {
+                                    label: Team Name,
+                                    name: team-name,
+                                    widget: string,
+                                 },
+                                 {
+                                    label: Is Committee?,
+                                    name: is-committee,
+                                    widget: boolean,
+                                 },
+                                 {
+                                    label: Members,
+                                    name: team-members,
+                                    widget: list,
+                                    fields:
+                                       [
+                                          {
+                                             label: Name,
+                                             name: member-name,
+                                             widget: string,
+                                          },
+                                          {
+                                             label: Picture,
+                                             name: member-picture,
+                                             widget: image,
+                                          },
+                                          {
+                                             label: Title,
+                                             name: member-title,
+                                             widget: string,
+                                          },
+                                          {
+                                             label: About,
+                                             name: member-blurb,
+                                             widget: text,
+                                          },
+                                       ],
+                                 },
+                              ],
+                        },
+                     ],
+               }
 
         - file: 'src/pages/acknowledgements/index.md'
           label: 'Acknowledgements'
