@@ -48,7 +48,18 @@ collections:
                   default: 'index-page',
                }
              - { label: Page Banner, name: image, widget: image }
-             - { label: Tagline, name: tagline, widget: string }
+             - {
+                  label: Heading,
+                  name: heading,
+                  widget: string,
+                  required: false,
+               }
+             - {
+                  label: Tagline,
+                  name: tagline,
+                  widget: string,
+                  required: false,
+               }
 
         - file: 'src/pages/our-mission/index.md'
           label: 'Our Mission'
@@ -61,8 +72,14 @@ collections:
                   default: 'default-page',
                }
              - { label: Title, name: title, widget: string }
-             - { label: Heading, name: heading, widget: string }
-             - { label: Body, name: body, widget: 'markdown' }
+             - { label: Page Banner, name: image, widget: image }
+             - {
+                  label: Heading,
+                  name: heading,
+                  widget: string,
+                  required: false,
+               }
+             - { label: Body, name: body, widget: 'markdown', required: false }
 
         - file: 'src/pages/our-team/index.md'
           label: 'The Team'
@@ -75,7 +92,13 @@ collections:
                   default: 'team-page',
                }
              - { label: Title, name: title, widget: string }
-             - { label: Heading, name: heading, widget: string }
+             - { label: Page Banner, name: image, widget: image }
+             - {
+                  label: Heading,
+                  name: heading,
+                  widget: string,
+                  required: false,
+               }
              - {
                   label: Organization,
                   name: organization,
@@ -97,6 +120,14 @@ collections:
                                     label: Is Committee?,
                                     name: is-committee,
                                     widget: boolean,
+                                    required: false,
+                                 },
+                                 {
+                                    label: Show Group?,
+                                    name: show-group,
+                                    widget: boolean,
+                                    default: true,
+                                    required: false,
                                  },
                                  {
                                     label: Members,
@@ -124,6 +155,13 @@ collections:
                                              name: member-blurb,
                                              widget: text,
                                           },
+                                          {
+                                             label: Show Member?,
+                                             name: show-member,
+                                             widget: boolean,
+                                             default: true,
+                                             required: false,
+                                          },
                                        ],
                                  },
                               ],
@@ -142,8 +180,14 @@ collections:
                   default: 'default-page',
                }
              - { label: Title, name: title, widget: string }
-             - { label: Heading, name: heading, widget: string }
-             - { label: Body, name: body, widget: 'markdown' }
+             - { label: Page Banner, name: image, widget: image }
+             - {
+                  label: Heading,
+                  name: heading,
+                  widget: string,
+                  required: false,
+               }
+             - { label: Body, name: body, widget: 'markdown', required: false }
 
         - file: 'src/pages/training-resources/index.md'
           label: 'Training Resources'
@@ -156,7 +200,13 @@ collections:
                   default: 'training-resources-page',
                }
              - { label: Title, name: title, widget: string }
-             - { label: Heading, name: heading, widget: string }
+             - { label: Page Banner, name: image, widget: image }
+             - {
+                  label: Heading,
+                  name: heading,
+                  widget: string,
+                  required: false,
+               }
              - {
                   label: Resource Groups,
                   name: resource-groups,
