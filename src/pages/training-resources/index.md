@@ -1,7 +1,8 @@
 ---
-templateKey: 'default-page'
+templateKey: 'training-resources-page'
 path: /training-resources
 title: Training Resources
+heading: Test head for train res
 ---
 
 ### Point One

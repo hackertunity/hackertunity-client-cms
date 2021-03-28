@@ -5,6 +5,7 @@ title: Our Mission
 image: /img/auditorium-benches-chairs-class-207691.jpeg
 heading: Hackertunity, Inc.
 ---
+
 Hackertunity, Inc. is a non-profit in the process of being established. We’re based in California-- many of us with roots in the Antelope Valley. Our mission:
 
 **To break cycles of poverty, empower at-risk populations, and diversify the computer science field by providing training and resources for building community-owned technological solutions.**
