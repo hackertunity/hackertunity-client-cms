@@ -15,12 +15,14 @@ organization:
             aggressive at times. But she really just wants equality and justice
             in the world.
           member-picture: /img/apple-touch-icon.png
+          show-member: true
         - member-name: Aaron Hampton
           member-picture: /img/apple-touch-icon.png
           member-title: Secretary & Co-Founder
           member-blurb: Aaron was born at a young age. He lives in a house and works when
             he can. He’s a nice young man and sensitive, please don’t be too
             loud around him.
+          show-member: true
         - member-name: Leo Yockey
           member-picture: /img/apple-touch-icon.png
           member-title: Treasurer & Co-Founder & Member of the Tech Committee
@@ -31,6 +33,7 @@ organization:
             homebody who spends his free time reading and watching sports. Send
             him memes.
       is-committee: true
+      show-group: true
     - is-committee: true
       team-name: Technology Committee
       team-members:
@@ -44,6 +47,7 @@ organization:
             Network Security Engineer and mentors students and entry-level
             engineers. Emily lives in Nevada and splits her time between
             Henderson and Lake Tahoe.
+          show-member: true
         - member-name: Valerie Solis
           member-picture: /img/apple-touch-icon.png
           member-title: Member of the Tech Committee
@@ -53,6 +57,8 @@ organization:
             to build a better future. Also, she is a Sagittarius sun, Scorpio
             moon, and Taurus Rising. Her favorite things are traveling, Netflix,
             and snacks. Pronouns: She/her."
+          show-member: true
+      show-group: true
     - team-name: Public Relations Committee
       is-committee: true
       team-members:
@@ -64,6 +70,8 @@ organization:
             and in her free time she can be found streaming video games, singing
             and watching cartoons.They are always looking for new gamer buddies.
             Pronouns: She/They"
+          show-member: true
+      show-group: true
     - team-name: Events Committee
       is-committee: true
       team-members:
@@ -75,6 +83,8 @@ organization:
             experiences that are inclusive, are “edutaining”, and enact positive
             change for the community. He also does improv and stuff — he even
             improvised this whole bio. Book him now!
+          show-member: true
+      show-group: true
     - team-name: Pet Committee
       is-committee: true
 ---
