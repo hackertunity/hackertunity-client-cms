@@ -1,17 +1,18 @@
 ---
-templateKey: 'default-page'
+templateKey: default-page
 path: /acknowledgements
 title: Our Acknowledgemets
+image: /img/pexels-anna-tis-4303760.jpeg
+heading: We at Hacketrunity, Inc.
 ---
+would like to acknowledge the following people for their contributions toward our cause:
 
-### Point One
+Chaka McConnell-Hubert, a million times, for your unending support.
 
-This is some text for an example acknowledgements page
+Shannon Hay, for designing our logo.
 
-### Point Two
+Daniel Choi & David Pineda, for helping get the site up and running.
 
-This is some text for an example acknowledgements page
+Cheyann Wetteland, Ph.D, for guidance and advice.
 
-### Point Three
-
-This is some text for an example acknowledgements page
+Miguel Lacsamana, for insight and support.
