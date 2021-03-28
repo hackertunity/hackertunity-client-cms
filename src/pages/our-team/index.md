@@ -1,5 +1,5 @@
 ---
-templateKey: default-page
+templateKey: team-page
 path: /our-team
 title: The Team
 image: /img/full-frame-shot-of-stadium-247839.jpeg
