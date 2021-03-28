@@ -83,7 +83,7 @@ collections:
                   fields:
                      [
                         {
-                           label: Team Group,
+                           label: Team Groups,
                            name: team-groups,
                            widget: list,
                            fields:
@@ -157,6 +157,47 @@ collections:
                }
              - { label: Title, name: title, widget: string }
              - { label: Heading, name: heading, widget: string }
+             - {
+                  label: Resource Groups,
+                  name: resource-groups,
+                  widget: list,
+                  fields:
+                     [
+                        {
+                           label: Group Header,
+                           name: group-header,
+                           widget: string,
+                        },
+                        {
+                           label: Field overview,
+                           name: field-overview,
+                           widget: text,
+                        },
+                        {
+                           label: Training Resources,
+                           name: training-resources,
+                           widget: list,
+                           fields:
+                              [
+                                 {
+                                    label: Resource Title,
+                                    name: resource-title,
+                                    widget: string,
+                                 },
+                                 {
+                                    label: Resource Url,
+                                    name: resource-url,
+                                    widget: string,
+                                 },
+                                 {
+                                    label: About Resource,
+                                    name: about-resource,
+                                    widget: text,
+                                 },
+                              ],
+                        },
+                     ],
+               }
 
         # UNREGISTERD ADMIN PAGES. FOR REFERENCE ONLY
 
