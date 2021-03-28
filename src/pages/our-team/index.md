@@ -96,14 +96,6 @@ organization:
         is-committee: true
 ---
 
-### Point One
-
-This is some text for an example team page
-
-### Point Two
-
-This is some text for an example team page
-
-### Point Three
+### Test copy
 
 This is some text for an example team page

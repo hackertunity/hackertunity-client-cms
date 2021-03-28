@@ -9,10 +9,11 @@ export const TeamPageTemplate = ({
 	image,
 	content,
 	contentComponent,
+	organization,
 }) => {
 	const PageContent = contentComponent || Content;
 
-	console.log('>> TEST:', image);
+	console.log('>> TEAM COMPONENT TEST:', image, organization);
 
 	return (
 		<div>
@@ -96,6 +97,7 @@ const TeamPage = ({ data }) => {
 				title={post.frontmatter.title}
 				image={post.frontmatter.image}
 				content={post.html}
+				organization={post.frontmatter.organization}
 			/>
 		</Layout>
 	);
@@ -110,6 +112,7 @@ export default TeamPage;
 export const TeamPageQuery = graphql`
 	query TeamPage($id: String!) {
 		markdownRemark(id: { eq: $id }) {
+			id
 			html
 			frontmatter {
 				title
@@ -117,6 +120,19 @@ export const TeamPageQuery = graphql`
 					childImageSharp {
 						fluid(maxWidth: 2048, quality: 100) {
 							...GatsbyImageSharpFluid
+						}
+					}
+				}
+				organization {
+					team_groups {
+						is_committee
+						show_group
+						team_name
+						team_members {
+							member_blurb
+							member_name
+							member_title
+							show_member
 						}
 					}
 				}
