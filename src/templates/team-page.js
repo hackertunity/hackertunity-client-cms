@@ -29,15 +29,45 @@ export const TeamPageTemplate = ({
 				}}
 			></div>
 
-			<section className="section section--gradient">
-				<div className="container">
+			<section
+				className="section section--gradient"
+				style={{ padding: `3rem 0` }}
+			>
+				<h2
+					className="title is-size-3 has-text-weight-bold is-bold-light"
+					style={{
+						backgroundColor: `#688d9c`,
+						color: `white`,
+						padding: `1rem 1rem 1rem 6rem`,
+						opacity: `.85`,
+						position: 'relative',
+						top: `-400px`,
+					}}
+				>
+					{title}
+				</h2>
+
+				<div
+					className="container"
+					style={{
+						// border: `1px solid green`,
+						position: 'relative',
+						top: `-400px`,
+					}}
+				>
 					<div className="columns">
 						<div className="column is-10 is-offset-1">
 							<div className="section">
-								<h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-									{title} test affa
-								</h2>
-								<PageContent className="content" content={content} />
+								<div
+									className="page-content-container"
+									style={{
+										backgroundColor: `white`,
+										padding: `2rem`,
+										boxShadow: `2px 2px 5px #777`,
+									}}
+								>
+									<PageContent className="content" content={content} />
+								</div>
 							</div>
 						</div>
 					</div>
