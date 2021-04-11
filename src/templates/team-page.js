@@ -8,17 +8,18 @@ const TeamGroup = ({ group }) => {
 	if (group.teamMembers) {
 		return (
 			<div>
-				{group.teamMembers.map((team, i) => {
+				{group.teamMembers.map((member, i) => {
+					let childImageSharp = member.profilePicture.childImageSharp;
+					let picSrc = childImageSharp
+						? childImageSharp.fixed.src
+						: member.profilePicture;
 					return (
 						<div key={i}>
-							<img
-								src={team.memberPicture.publicURL}
-								alt={team.memberName}
-							/>
+							<img src={picSrc} alt={member.profileName} />
 							<h3>
-								{team.memberName},&nbsp;{team.memberTitle}
+								{member.profileName},&nbsp;{member.profileTitle}
 							</h3>
-							<p>{team.memberBlurb}</p>
+							<p>{member.profileBlurb}</p>
 						</div>
 					);
 				})}
@@ -158,13 +159,17 @@ export const TeamPageQuery = graphql`
 						showGroup
 						teamName
 						teamMembers {
-							memberPicture {
-								publicURL
+							profilePicture {
+								childImageSharp {
+									fixed {
+										src
+									}
+								}
 							}
-							memberBlurb
-							memberName
-							memberTitle
-							showMember
+							profileBlurb
+							profileName
+							profileTitle
+							showProfile
 						}
 					}
 				}
