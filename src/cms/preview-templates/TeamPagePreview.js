@@ -11,6 +11,7 @@ const TeamPagePreview = ({ entry, getAsset, widgetFor }) => {
 				image={getAsset(data.image)}
 				title={data.title}
 				content={widgetFor('body')}
+				organization={data.organization}
 			/>
 		);
 	} else {

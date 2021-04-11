@@ -108,18 +108,18 @@ collections:
                      [
                         {
                            label: Team Groups,
-                           name: team-groups,
+                           name: teamGroups,
                            widget: list,
                            fields:
                               [
                                  {
                                     label: Team Name,
-                                    name: team-name,
+                                    name: teamName,
                                     widget: string,
                                  },
                                  {
                                     label: Group Type,
-                                    name: group-type,
+                                    name: groupType,
                                     widget: select,
                                     required: true,
                                     options:
@@ -137,40 +137,40 @@ collections:
                                  },
                                  {
                                     label: Show Group?,
-                                    name: show-group,
+                                    name: showGroup,
                                     widget: boolean,
                                     default: true,
                                     required: false,
                                  },
                                  {
                                     label: Members,
-                                    name: team-members,
+                                    name: teamMembers,
                                     widget: list,
                                     fields:
                                        [
                                           {
                                              label: Name,
-                                             name: member-name,
+                                             name: memberName,
                                              widget: string,
                                           },
                                           {
                                              label: Picture,
-                                             name: member-picture,
+                                             name: memberPicture,
                                              widget: image,
                                           },
                                           {
                                              label: Title,
-                                             name: member-title,
+                                             name: memberTitle,
                                              widget: string,
                                           },
                                           {
                                              label: About,
-                                             name: member-blurb,
+                                             name: memberBlurb,
                                              widget: text,
                                           },
                                           {
                                              label: Show Member?,
-                                             name: show-member,
+                                             name: showMember,
                                              widget: boolean,
                                              default: true,
                                              required: false,

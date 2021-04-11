@@ -4,6 +4,30 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
+const Derp = ({ group }) => {
+	if (group.teamMembers) {
+		return (
+			<div>
+				{group.teamMembers.map((team, i) => {
+					return (
+						<div key={i}>
+							<img
+								src={team.memberPicture.publicURL}
+								alt={team.memberName}
+							/>
+							<h3>
+								{team.memberName},&nbsp;{team.memberTitle}
+							</h3>
+							<p>{team.memberBlurb}</p>
+						</div>
+					);
+				})}
+			</div>
+		);
+	}
+	return <p>No Members...</p>;
+};
+
 export const TeamPageTemplate = ({
 	title,
 	image,
@@ -12,8 +36,6 @@ export const TeamPageTemplate = ({
 	organization,
 }) => {
 	const PageContent = contentComponent || Content;
-
-	console.log('>> TEAM COMPONENT TEST:', image, organization);
 
 	return (
 		<div>
@@ -68,6 +90,15 @@ export const TeamPageTemplate = ({
 									}}
 								>
 									<PageContent className="content" content={content} />
+
+									{organization.teamGroups.map((group, i) => {
+										return (
+											<div key={i}>
+												<h1>{group.teamName}</h1>
+												<Derp group={group} />
+											</div>
+										);
+									})}
 								</div>
 							</div>
 						</div>
@@ -87,8 +118,6 @@ TeamPageTemplate.propTypes = {
 
 const TeamPage = ({ data }) => {
 	const { markdownRemark: post } = data;
-
-	console.log('>> TEST TEAM PAGE FM:', post);
 
 	return (
 		<Layout>
@@ -124,15 +153,18 @@ export const TeamPageQuery = graphql`
 					}
 				}
 				organization {
-					team_groups {
-						is_committee
-						show_group
-						team_name
-						team_members {
-							member_blurb
-							member_name
-							member_title
-							show_member
+					teamGroups {
+						groupType
+						showGroup
+						teamName
+						teamMembers {
+							memberPicture {
+								publicURL
+							}
+							memberBlurb
+							memberName
+							memberTitle
+							showMember
 						}
 					}
 				}
