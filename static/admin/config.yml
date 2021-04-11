@@ -108,57 +108,69 @@ collections:
                      [
                         {
                            label: Team Groups,
-                           name: team-groups,
+                           name: teamGroups,
                            widget: list,
                            fields:
                               [
                                  {
                                     label: Team Name,
-                                    name: team-name,
+                                    name: teamName,
                                     widget: string,
                                  },
                                  {
-                                    label: Is Committee?,
-                                    name: is-committee,
-                                    widget: boolean,
-                                    required: false,
+                                    label: Group Type,
+                                    name: groupType,
+                                    widget: select,
+                                    required: true,
+                                    options:
+                                       [
+                                          { label: 'Board', value: 'board' },
+                                          {
+                                             label: 'Committee',
+                                             value: 'committee',
+                                          },
+                                          {
+                                             label: 'Contributors',
+                                             value: 'contributors',
+                                          },
+                                       ],
                                  },
                                  {
                                     label: Show Group?,
-                                    name: show-group,
+                                    name: showGroup,
                                     widget: boolean,
                                     default: true,
                                     required: false,
                                  },
                                  {
                                     label: Members,
-                                    name: team-members,
+                                    name: teamMembers,
                                     widget: list,
                                     fields:
                                        [
                                           {
                                              label: Name,
-                                             name: member-name,
+                                             name: memberName,
                                              widget: string,
                                           },
                                           {
                                              label: Picture,
-                                             name: member-picture,
+                                             name: memberPicture,
                                              widget: image,
                                           },
                                           {
                                              label: Title,
-                                             name: member-title,
+                                             name: memberTitle,
                                              widget: string,
                                           },
                                           {
                                              label: About,
-                                             name: member-blurb,
+                                             name: memberBlurb,
                                              widget: text,
                                           },
                                           {
                                              label: Show Member?,
-                                             name: show-member,
+                                             name: showMember,
                                              widget: boolean,
                                              default: true,
                                              required: false,
