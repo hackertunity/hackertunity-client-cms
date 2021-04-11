@@ -9,12 +9,13 @@ const TeamGroup = ({ group }) => {
 		return (
 			<div>
 				{group.teamMembers.map((team, i) => {
+					let childImageSharp = team.memberPicture.childImageSharp;
+					let picSrc = childImageSharp
+						? childImageSharp.fixed.src
+						: team.memberPicture;
 					return (
 						<div key={i}>
-							<img
-								src={team.memberPicture.publicURL}
-								alt={team.memberName}
-							/>
+							<img src={picSrc} alt={team.memberName} />
 							<h3>
 								{team.memberName},&nbsp;{team.memberTitle}
 							</h3>
@@ -159,7 +160,11 @@ export const TeamPageQuery = graphql`
 						teamName
 						teamMembers {
 							memberPicture {
-								publicURL
+								childImageSharp {
+									fixed {
+										src
+									}
+								}
 							}
 							memberBlurb
 							memberName
