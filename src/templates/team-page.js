@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
-const Derp = ({ group }) => {
+const TeamGroup = ({ group }) => {
 	if (group.teamMembers) {
 		return (
 			<div>
@@ -95,7 +95,7 @@ export const TeamPageTemplate = ({
 										return (
 											<div key={i}>
 												<h1>{group.teamName}</h1>
-												<Derp group={group} />
+												<TeamGroup group={group} />
 											</div>
 										);
 									})}
