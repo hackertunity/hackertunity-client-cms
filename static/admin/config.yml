@@ -150,27 +150,27 @@ collections:
                                        [
                                           {
                                              label: Name,
-                                             name: memberName,
+                                             name: profileName,
                                              widget: string,
                                           },
                                           {
                                              label: Picture,
-                                             name: memberPicture,
+                                             name: profilePicture,
                                              widget: image,
                                           },
                                           {
                                              label: Title,
-                                             name: memberTitle,
+                                             name: profileTitle,
                                              widget: string,
                                           },
                                           {
                                              label: About,
-                                             name: memberBlurb,
+                                             name: profileBlurb,
                                              widget: text,
                                           },
                                           {
                                              label: Show Member?,
-                                             name: showMember,
+                                             name: showProfile,
                                              widget: boolean,
                                              default: true,
                                              required: false,
