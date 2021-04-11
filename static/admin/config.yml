@@ -118,10 +118,22 @@ collections:
                                     widget: string,
                                  },
                                  {
-                                    label: Is Committee?,
-                                    name: is-committee,
-                                    widget: boolean,
-                                    required: false,
+                                    label: Group Type,
+                                    name: group-type,
+                                    widget: select,
+                                    required: true,
+                                    options:
+                                       [
+                                          { label: 'Board', value: 'board' },
+                                          {
+                                             label: 'Committee',
+                                             value: 'committee',
+                                          },
+                                          {
+                                             label: 'Contributors',
+                                             value: 'contributors',
+                                          },
+                                       ],
                                  },
                                  {
                                     label: Show Group?,
