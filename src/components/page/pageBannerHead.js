@@ -15,7 +15,7 @@ const PageBannerHead = ({ image, title }) => {
 	// <SomeComp handleSomething={handleSomething} />
 
 	return (
-		<div>
+		<div className="page-banner-head">
 			<div
 				className="full-width-image margin-top-0"
 				style={{

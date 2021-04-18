@@ -5,6 +5,7 @@ import Content, { HTMLContent } from '../components/Content';
 
 import Layout from '../components/Layout';
 import PageBannerHead from '../components/page/pageBannerHead';
+import PageMainColumn from '../components/page/pageMainColumn';
 
 const TeamGroup = ({ group }) => {
 	if (group.teamMembers) {
@@ -44,45 +45,18 @@ export const TeamPageTemplate = ({
 		<div>
 			<PageBannerHead image={image} title={title} />
 
-			<section
-				className="section section--gradient"
-				style={{ padding: `3rem 0` }}
-			>
-				<div
-					className="container"
-					style={{
-						// border: `1px solid green`,
-						position: 'relative',
-						top: `-400px`,
-					}}
-				>
-					<div className="columns">
-						<div className="column is-10 is-offset-1">
-							<div className="section">
-								<div
-									className="page-content-container"
-									style={{
-										backgroundColor: `white`,
-										padding: `2rem`,
-										boxShadow: `2px 2px 5px #777`,
-									}}
-								>
-									<PageContent className="content" content={content} />
+			<PageMainColumn>
+				<PageContent className="content" content={content} />
 
-									{organization.teamGroups.map((group, i) => {
-										return (
-											<div key={i}>
-												<h1>{group.teamName}</h1>
-												<TeamGroup group={group} />
-											</div>
-										);
-									})}
-								</div>
-							</div>
+				{organization.teamGroups.map((group, i) => {
+					return (
+						<div key={i}>
+							<h1>{group.teamName}</h1>
+							<TeamGroup group={group} />
 						</div>
-					</div>
-				</div>
-			</section>
+					);
+				})}
+			</PageMainColumn>
 		</div>
 	);
 };
