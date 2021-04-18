@@ -42,7 +42,7 @@ export const TeamPageTemplate = ({
 	const PageContent = contentComponent || Content;
 
 	return (
-		<div>
+		<div className="team-page">
 			<PageBannerHead image={image} title={title} />
 
 			<PageMainColumn>
