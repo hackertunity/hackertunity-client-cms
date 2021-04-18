@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
+
+import Layout from '../components/Layout';
+import PageTitle from '../components/page/pageTitle';
 
 const TeamGroup = ({ group }) => {
 	if (group.teamMembers) {
@@ -57,27 +59,7 @@ export const TeamPageTemplate = ({
 				className="section section--gradient"
 				style={{ padding: `3rem 0` }}
 			>
-				<div
-					className="page-title title is-size-2 has-text-weight-bold is-bold-light"
-					style={{
-						backgroundColor: `#688d9c`,
-						color: `white`,
-						padding: `1rem 1rem 1rem 6rem`,
-						opacity: `.85`,
-						position: `relative`,
-						top: `-400px`,
-					}}
-				>
-					<h2
-						className="column is-10 is-offset-1"
-						style={{
-							position: `relative`,
-							padding: `0 0 0 2rem`,
-						}}
-					>
-						{title}
-					</h2>
-				</div>
+				<PageTitle title={title} />
 
 				<div
 					className="container"
