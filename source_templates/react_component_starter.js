@@ -7,7 +7,7 @@ import React from 'react';
 // import SomeComp from './';
 
 const ComponentName = ({ someNode }) => {
-	console.log('>> TEST RENDER SOME_NODE:', someNode);
+	console.log('>> TEST RENDER SOME_COMPONENT:', someNode);
 
 	// const handleSomething = () => {
 	// 	console.log('>>');
@@ -16,7 +16,7 @@ const ComponentName = ({ someNode }) => {
 
 	return (
 		<>
-			<h1>SOME_COMPONENT_NAME_IS_WORKING</h1>
+			<h1>SOME_COMPONENT IS_WORKING</h1>
 		</>
 	);
 };
