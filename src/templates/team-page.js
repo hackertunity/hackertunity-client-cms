@@ -4,7 +4,7 @@ import { graphql } from 'gatsby';
 import Content, { HTMLContent } from '../components/Content';
 
 import Layout from '../components/Layout';
-import PageTitle from '../components/page/pageTitle';
+import PageBannerHead from '../components/page/pageBannerHead';
 
 const TeamGroup = ({ group }) => {
 	if (group.teamMembers) {
@@ -42,25 +42,12 @@ export const TeamPageTemplate = ({
 
 	return (
 		<div>
-			<div
-				className="full-width-image margin-top-0"
-				style={{
-					backgroundImage: `url(${
-						!!image.childImageSharp
-							? image.childImageSharp.fluid.src
-							: image
-					})`,
-					backgroundPosition: `top left`,
-					backgroundAttachment: `fixed`,
-				}}
-			></div>
+			<PageBannerHead image={image} title={title} />
 
 			<section
 				className="section section--gradient"
 				style={{ padding: `3rem 0` }}
 			>
-				<PageTitle title={title} />
-
 				<div
 					className="container"
 					style={{

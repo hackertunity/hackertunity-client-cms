@@ -18,7 +18,7 @@ const PageTitle = ({ title }) => {
 				padding: `1rem 1rem 1rem 6rem`,
 				opacity: `.85`,
 				position: `relative`,
-				top: `-400px`,
+				top: `-350px`,
 			}}
 		>
 			<h2
