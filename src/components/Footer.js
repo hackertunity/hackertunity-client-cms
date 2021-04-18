@@ -29,10 +29,7 @@ const Footer = class extends React.Component {
 											</Link>
 										</li>
 										<li>
-											<Link
-												className="navbar-item"
-												to="/our-team"
-											>
+											<Link className="navbar-item" to="/our-team">
 												The Team
 											</Link>
 										</li>
@@ -59,10 +56,7 @@ const Footer = class extends React.Component {
 											</Link>
 										</li>
 										<li>
-											<Link
-												className="navbar-item"
-												to="/blog"
-											>
+											<Link className="navbar-item" to="/blog">
 												Job Feed
 											</Link>
 										</li>
@@ -72,14 +66,6 @@ const Footer = class extends React.Component {
 												to="/working-remotely"
 											>
 												Working Remotely
-											</Link>
-										</li>
-										<li>
-											<Link
-												className="navbar-item"
-												to="/small-businesses"
-											>
-												Small Businesses
 											</Link>
 										</li>
 									</ul>
@@ -101,10 +87,7 @@ const Footer = class extends React.Component {
 										style={{ width: '1em', height: '1em' }}
 									/>
 								</a>
-								<a
-									title="instagram"
-									href="https://instagram.com"
-								>
+								<a title="instagram" href="https://instagram.com">
 									<img
 										src={instagram}
 										alt="Instagram"
