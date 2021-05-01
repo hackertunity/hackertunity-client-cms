@@ -20,8 +20,10 @@ CMS.registerPreviewTemplate('our-mission', DefaultPagePreview);
 CMS.registerPreviewTemplate('our-team', TeamPagePreview);
 CMS.registerPreviewTemplate('acknowledgements', DefaultPagePreview);
 
+// CAREER CATALYSTS
 CMS.registerPreviewTemplate('training-resources', TrainingResourcesPagePreview);
-CMS.registerPreviewTemplate('blog', BlogPostPreview);
+CMS.registerPreviewTemplate('blog', BlogPostPreview); // << JOB FEED TBD
+CMS.registerPreviewTemplate('working-remotely', DefaultPagePreview);
 
 // NOT USING RIGHT NOW
 // CMS.registerPreviewTemplate('about', AboutPagePreview)
