@@ -79,7 +79,10 @@ const Footer = class extends React.Component {
 									</ul>
 								</section>
 							</div>
-							<div className="column is-4 social">
+							<div
+								className="column is-4 social"
+								style={{ display: 'none' }}
+							>
 								<a
 									title="facebook"
 									href="https://facebook.com"
