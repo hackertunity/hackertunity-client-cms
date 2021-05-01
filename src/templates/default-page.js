@@ -1,35 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
 
-export const DefaultPageTemplate = ({ title, content, contentComponent }) => {
+import Layout from '../components/Layout';
+import PageBannerHead from '../components/page/pageBannerHead';
+import PageMainColumn from '../components/page/pageMainColumn';
+
+export const DefaultPageTemplate = ({
+	title,
+	image,
+	content,
+	contentComponent,
+}) => {
 	const PageContent = contentComponent || Content;
 
 	return (
-		<section className="section section--gradient">
-			<div className="container">
-				<div className="columns">
-					<div className="column is-10 is-offset-1">
-						<div className="section">
-							<h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-								{title}
-							</h2>
-							<PageContent
-								className="content"
-								content={content}
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<div className="default-page">
+			<PageBannerHead image={image} title={title} />
+
+			<PageMainColumn>
+				<PageContent className="content" content={content} />
+			</PageMainColumn>
+		</div>
 	);
 };
 
 DefaultPageTemplate.propTypes = {
 	title: PropTypes.string.isRequired,
+	image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 	content: PropTypes.string,
 	contentComponent: PropTypes.func,
 };
@@ -42,6 +41,7 @@ const DefaultPage = ({ data }) => {
 			<DefaultPageTemplate
 				contentComponent={HTMLContent}
 				title={post.frontmatter.title}
+				image={post.frontmatter.image}
 				content={post.html}
 			/>
 		</Layout>
@@ -57,9 +57,17 @@ export default DefaultPage;
 export const DefaultPageQuery = graphql`
 	query DefaultPage($id: String!) {
 		markdownRemark(id: { eq: $id }) {
+			id
 			html
 			frontmatter {
 				title
+				image {
+					childImageSharp {
+						fluid(maxWidth: 2048, quality: 100) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
 			}
 		}
 	}

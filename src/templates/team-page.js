@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
-import Layout from '../components/Layout';
 import Content, { HTMLContent } from '../components/Content';
+
+import Layout from '../components/Layout';
+import PageBannerHead from '../components/page/pageBannerHead';
+import PageMainColumn from '../components/page/pageMainColumn';
 
 const TeamGroup = ({ group }) => {
 	if (group.teamMembers) {
@@ -39,73 +42,21 @@ export const TeamPageTemplate = ({
 	const PageContent = contentComponent || Content;
 
 	return (
-		<div>
-			<div
-				className="full-width-image margin-top-0"
-				style={{
-					backgroundImage: `url(${
-						!!image.childImageSharp
-							? image.childImageSharp.fluid.src
-							: image
-					})`,
-					backgroundPosition: `top left`,
-					backgroundAttachment: `fixed`,
-				}}
-			></div>
+		<div className="team-page">
+			<PageBannerHead image={image} title={title} />
 
-			<section
-				className="section section--gradient"
-				style={{ padding: `3rem 0` }}
-			>
-				<h2
-					className="title is-size-3 has-text-weight-bold is-bold-light"
-					style={{
-						backgroundColor: `#688d9c`,
-						color: `white`,
-						padding: `1rem 1rem 1rem 6rem`,
-						opacity: `.85`,
-						position: 'relative',
-						top: `-400px`,
-					}}
-				>
-					{title}
-				</h2>
+			<PageMainColumn>
+				<PageContent className="content" content={content} />
 
-				<div
-					className="container"
-					style={{
-						// border: `1px solid green`,
-						position: 'relative',
-						top: `-400px`,
-					}}
-				>
-					<div className="columns">
-						<div className="column is-10 is-offset-1">
-							<div className="section">
-								<div
-									className="page-content-container"
-									style={{
-										backgroundColor: `white`,
-										padding: `2rem`,
-										boxShadow: `2px 2px 5px #777`,
-									}}
-								>
-									<PageContent className="content" content={content} />
-
-									{organization.teamGroups.map((group, i) => {
-										return (
-											<div key={i}>
-												<h1>{group.teamName}</h1>
-												<TeamGroup group={group} />
-											</div>
-										);
-									})}
-								</div>
-							</div>
+				{organization.teamGroups.map((group, i) => {
+					return (
+						<div key={i}>
+							<h1>{group.teamName}</h1>
+							<TeamGroup group={group} />
 						</div>
-					</div>
-				</div>
-			</section>
+					);
+				})}
+			</PageMainColumn>
 		</div>
 	);
 };
