@@ -29,10 +29,7 @@ const Footer = class extends React.Component {
 											</Link>
 										</li>
 										<li>
-											<Link
-												className="navbar-item"
-												to="/our-team"
-											>
+											<Link className="navbar-item" to="/our-team">
 												The Team
 											</Link>
 										</li>
@@ -59,10 +56,7 @@ const Footer = class extends React.Component {
 											</Link>
 										</li>
 										<li>
-											<Link
-												className="navbar-item"
-												to="/blog"
-											>
+											<Link className="navbar-item" to="/blog">
 												Job Feed
 											</Link>
 										</li>
@@ -74,26 +68,29 @@ const Footer = class extends React.Component {
 												Working Remotely
 											</Link>
 										</li>
-										<li>
-											<Link
-												className="navbar-item"
-												to="/small-businesses"
-											>
-												Small Businesses
-											</Link>
-										</li>
 									</ul>
 								</section>
 							</div>
-							<div className="column is-4 social">
-								<a title="facebook" href="https://facebook.com">
+							<div
+								className="column is-4 social"
+								style={{ display: 'none' }}
+							>
+								<a
+									title="facebook"
+									href="https://facebook.com"
+									target="_blank"
+								>
 									<img
 										src={facebook}
 										alt="Facebook"
 										style={{ width: '1em', height: '1em' }}
 									/>
 								</a>
-								<a title="twitter" href="https://twitter.com">
+								<a
+									title="twitter"
+									href="https://twitter.com"
+									target="_blank"
+								>
 									<img
 										className="fas fa-lg"
 										src={twitter}
@@ -104,6 +101,7 @@ const Footer = class extends React.Component {
 								<a
 									title="instagram"
 									href="https://instagram.com"
+									target="_blank"
 								>
 									<img
 										src={instagram}
@@ -111,7 +109,11 @@ const Footer = class extends React.Component {
 										style={{ width: '1em', height: '1em' }}
 									/>
 								</a>
-								<a title="vimeo" href="https://vimeo.com">
+								<a
+									title="vimeo"
+									href="https://vimeo.com"
+									target="_blank"
+								>
 									<img
 										src={vimeo}
 										alt="Vimeo"
