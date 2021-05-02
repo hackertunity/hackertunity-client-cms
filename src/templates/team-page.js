@@ -7,6 +7,8 @@ import Layout from '../components/Layout';
 import PageBannerHead from '../components/page/pageBannerHead';
 import PageMainColumn from '../components/page/pageMainColumn';
 
+import TeamGroupA from '../components/team/group';
+
 const TeamGroup = ({ group }) => {
 	if (group.teamMembers) {
 		return (
@@ -51,6 +53,7 @@ export const TeamPageTemplate = ({
 				{organization.teamGroups.map((group, i) => {
 					return (
 						<div key={i}>
+							<TeamGroupA />
 							<h1>{group.teamName}</h1>
 							<TeamGroup group={group} />
 						</div>
