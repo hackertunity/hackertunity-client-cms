@@ -68,14 +68,6 @@ const Footer = class extends React.Component {
 												Working Remotely
 											</Link>
 										</li>
-										<li>
-											<Link
-												className="navbar-item"
-												to="/small-businesses"
-											>
-												Small Businesses
-											</Link>
-										</li>
 									</ul>
 								</section>
 							</div>
