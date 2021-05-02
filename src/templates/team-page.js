@@ -7,32 +7,7 @@ import Layout from '../components/Layout';
 import PageBannerHead from '../components/page/pageBannerHead';
 import PageMainColumn from '../components/page/pageMainColumn';
 
-import TeamGroupA from '../components/team/group';
-
-const TeamGroup = ({ group }) => {
-	if (group.teamMembers) {
-		return (
-			<div>
-				{group.teamMembers.map((member, i) => {
-					let childImageSharp = member.profilePicture.childImageSharp;
-					let picSrc = childImageSharp
-						? childImageSharp.fixed.src
-						: member.profilePicture;
-					return (
-						<div key={i}>
-							<img src={picSrc} alt={member.profileName} />
-							<h3>
-								{member.profileName},&nbsp;{member.profileTitle}
-							</h3>
-							<p>{member.profileBlurb}</p>
-						</div>
-					);
-				})}
-			</div>
-		);
-	}
-	return <p>No Members...</p>;
-};
+import TeamGroup from '../components/team/group';
 
 export const TeamPageTemplate = ({
 	title,
@@ -53,8 +28,6 @@ export const TeamPageTemplate = ({
 				{organization.teamGroups.map((group, i) => {
 					return (
 						<div key={i}>
-							<TeamGroupA />
-							<h1>{group.teamName}</h1>
 							<TeamGroup group={group} />
 						</div>
 					);
