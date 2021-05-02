@@ -27,7 +27,7 @@ export const TeamPageTemplate = ({
 
 				{organization.teamGroups.map((group, i) => {
 					return (
-						<div key={i}>
+						<div className="group members" key={i}>
 							<TeamGroup group={group} />
 						</div>
 					);

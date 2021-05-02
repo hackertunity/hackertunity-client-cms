@@ -16,8 +16,8 @@ const TeamGroup = ({ group }) => {
 
 	if (group.teamMembers) {
 		return (
-			<div>
-				<h1>{group.teamName}</h1>
+			<>
+				<h1 className="group team-name">{group.teamName}</h1>
 
 				{group.teamMembers.map((member, i) => {
 					let childImageSharp = member.profilePicture.childImageSharp;
@@ -25,20 +25,26 @@ const TeamGroup = ({ group }) => {
 						? childImageSharp.fixed.src
 						: member.profilePicture;
 					return (
-						<div key={i}>
-							<img src={picSrc} alt={member.profileName} />
-							<h3>
+						<div className="group team-member" key={i}>
+							<img
+								className="group team-member-avatar"
+								src={picSrc}
+								alt={member.profileName}
+							/>
+							<h3 className="group team-member-title">
 								{member.profileName},&nbsp;{member.profileTitle}
 							</h3>
-							<p>{member.profileBlurb}</p>
+							<p className="group team-member-profile">
+								{member.profileBlurb}
+							</p>
 						</div>
 					);
 				})}
-			</div>
+			</>
 		);
 	}
 
-	return <p>No Members...</p>;
+	return <></>;
 };
 
 export default TeamGroup;
