@@ -248,11 +248,13 @@ collections:
                                     label: Resource Title,
                                     name: resource-title,
                                     widget: string,
+                                    required: true,
                                  },
                                  {
                                     label: Resource Url,
                                     name: resource-url,
                                     widget: string,
+                                    required: true,
                                  },
                                  {
                                     label: About Resource,
