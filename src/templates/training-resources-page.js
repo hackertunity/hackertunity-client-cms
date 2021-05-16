@@ -14,7 +14,7 @@ export const TrainingResourcesPageTemplate = ({
 	image,
 	content,
 	contentComponent,
-	// trainging resources here
+	trainingCategories,
 }) => {
 	const PageContent = contentComponent || Content;
 
@@ -25,7 +25,7 @@ export const TrainingResourcesPageTemplate = ({
 			<PageMainColumn>
 				<PageContent className="content" content={content} />
 
-				<TrainingResources />
+				<TrainingResources trainingCategories={trainingCategories} />
 			</PageMainColumn>
 		</div>
 	);
@@ -33,6 +33,7 @@ export const TrainingResourcesPageTemplate = ({
 
 TrainingResourcesPageTemplate.propTypes = {
 	title: PropTypes.string.isRequired,
+	image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 	content: PropTypes.string,
 	contentComponent: PropTypes.func,
 };
@@ -45,7 +46,9 @@ const TrainingResourcesPage = ({ data }) => {
 			<TrainingResourcesPageTemplate
 				contentComponent={HTMLContent}
 				title={post.frontmatter.title}
+				image={post.frontmatter.image}
 				content={post.html}
+				trainingCategories={post.frontmatter.trainingCategories}
 			/>
 		</Layout>
 	);
@@ -60,9 +63,26 @@ export default TrainingResourcesPage;
 export const TrainResPageQuery = graphql`
 	query TrainResPage($id: String!) {
 		markdownRemark(id: { eq: $id }) {
+			id
 			html
 			frontmatter {
 				title
+				image {
+					childImageSharp {
+						fluid(maxWidth: 2048, quality: 100) {
+							...GatsbyImageSharpFluid
+						}
+					}
+				}
+				trainingCategories {
+					categoryName
+					categoryOverview
+					trainingResources {
+						resourceTitle
+						resourceUrl
+						aboutResource
+					}
+				}
 			}
 		}
 	}

@@ -7,7 +7,8 @@ import React from 'react';
 // import SomeComp from './';
 
 const ComponentName = ({ someNode }) => {
-	console.log('>> TEST RENDER SOME_COMPONENT:', someNode);
+	console.log('>> TEST RENDER SOME_COMPONENT:');
+	console.log({ someNode });
 
 	// const handleSomething = () => {
 	// 	console.log('>>');

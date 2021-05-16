@@ -6,8 +6,8 @@ import React from 'react';
 // Utilized components imported
 // import SomeComp from './';
 
-const TrainingResources = ({ someNode }) => {
-	console.log('>> TEST RENDER TRAINING_RESOURCES:', someNode);
+const TrainingResources = ({ trainingCategories }) => {
+	console.log('>> TEST RENDER TRAINING_RESOURCES:', trainingCategories);
 
 	// const handleSomething = () => {
 	// 	console.log('>>');

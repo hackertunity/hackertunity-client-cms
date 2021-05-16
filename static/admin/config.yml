@@ -222,43 +222,43 @@ collections:
                }
              - {
                   label: Training Categories,
-                  name: training-categories,
+                  name: trainingCategories,
                   widget: list,
                   fields:
                      [
                         {
                            label: Category Name,
-                           name: category-name,
+                           name: categoryName,
                            widget: string,
                            required: true,
                         },
                         {
                            label: Category Overview,
-                           name: category-overview,
+                           name: categoryOverview,
                            widget: 'markdown',
                            required: false,
                         },
                         {
                            label: Training Resources,
-                           name: training-resources,
+                           name: trainingResources,
                            widget: list,
                            fields:
                               [
                                  {
                                     label: Resource Title,
-                                    name: resource-title,
+                                    name: resourceTitle,
                                     widget: string,
                                     required: true,
                                  },
                                  {
                                     label: Resource Url,
-                                    name: resource-url,
+                                    name: resourceUrl,
                                     widget: string,
                                     required: true,
                                  },
                                  {
                                     label: About Resource,
-                                    name: about-resource,
+                                    name: aboutResource,
                                     widget: 'markdown',
                                     required: false,
                                  },
