@@ -18,12 +18,12 @@ const TrainingResources = ({ trainingCategories }) => {
 		<div className="training-resources-categories">
 			{trainingCategories.map((group, i) => {
 				return (
-					<div className="training resources category" key={i}>
-						<h1 className="category-name">{group.categoryName}</h1>
+					<div className="content-card" key={i}>
+						<h1 className="cotnent-card-header">{group.categoryName}</h1>
 						<p className="category-overview">{group.categoryOverview}</p>
 						{group.trainingResources.map((entry, i) => {
 							return (
-								<div className="training resource" key={i}>
+								<div className="training-resource" key={i}>
 									<a
 										className="link-to-resource"
 										href={entry.resourceUrl}
