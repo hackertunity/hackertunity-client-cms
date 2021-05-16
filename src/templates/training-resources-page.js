@@ -7,11 +7,14 @@ import Layout from '../components/Layout';
 import PageBannerHead from '../components/page/pageBannerHead';
 import PageMainColumn from '../components/page/pageMainColumn';
 
+import TrainingResources from '../components/training/resources';
+
 export const TrainingResourcesPageTemplate = ({
 	title,
 	image,
 	content,
 	contentComponent,
+	// trainging resources here
 }) => {
 	const PageContent = contentComponent || Content;
 
@@ -21,6 +24,8 @@ export const TrainingResourcesPageTemplate = ({
 
 			<PageMainColumn>
 				<PageContent className="content" content={content} />
+
+				<TrainingResources />
 			</PageMainColumn>
 		</div>
 	);
