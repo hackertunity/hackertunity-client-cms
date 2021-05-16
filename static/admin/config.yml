@@ -220,6 +220,7 @@ collections:
                   widget: string,
                   required: false,
                }
+             - { label: Body, name: body, widget: 'markdown', required: false }
              - {
                   label: Training Categories,
                   name: trainingCategories,
