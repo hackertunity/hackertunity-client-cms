@@ -110,8 +110,7 @@ collections:
                            label: Team Groups,
                            name: teamGroups,
                            widget: list,
-                           fields:
-                              [
+                           fields: [
                                  {
                                     label: Team Name,
                                     name: teamName,
@@ -135,19 +134,18 @@ collections:
                                           },
                                        ],
                                  },
-                                 {
-                                    label: Show Group?,
-                                    name: showGroup,
-                                    widget: boolean,
-                                    default: true,
-                                    required: false,
-                                 },
+                                 #  {
+                                 #     label: Show Group?,
+                                 #     name: showGroup,
+                                 #     widget: boolean,
+                                 #     default: true,
+                                 #     required: false,
+                                 #  },
                                  {
                                     label: Members,
                                     name: teamMembers,
                                     widget: list,
-                                    fields:
-                                       [
+                                    fields: [
                                           {
                                              label: Name,
                                              name: profileName,
@@ -168,13 +166,13 @@ collections:
                                              name: profileBlurb,
                                              widget: text,
                                           },
-                                          {
-                                             label: Show Member?,
-                                             name: showProfile,
-                                             widget: boolean,
-                                             default: true,
-                                             required: false,
-                                          },
+                                          # {
+                                          #    label: Show Member?,
+                                          #    name: showProfile,
+                                          #    widget: boolean,
+                                          #    default: true,
+                                          #    required: false,
+                                          # },
                                        ],
                                  },
                               ],
@@ -220,6 +218,7 @@ collections:
                   widget: string,
                   required: false,
                }
+             - { label: Body, name: body, widget: 'markdown', required: false }
              - {
                   label: Training Categories,
                   name: trainingCategories,

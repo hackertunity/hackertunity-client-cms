@@ -16,8 +16,8 @@ const TeamGroup = ({ group }) => {
 
 	if (group.teamMembers) {
 		return (
-			<>
-				<h1 className="group team-name">{group.teamName}</h1>
+			<div className="content-card">
+				<h1 className="cotnent-card-header">{group.teamName}</h1>
 
 				{group.teamMembers.map((member, i) => {
 					let childImageSharp = member.profilePicture.childImageSharp;
@@ -40,7 +40,7 @@ const TeamGroup = ({ group }) => {
 						</div>
 					);
 				})}
-			</>
+			</div>
 		);
 	}
 

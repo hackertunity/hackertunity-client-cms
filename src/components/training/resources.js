@@ -15,9 +15,32 @@ const TrainingResources = ({ trainingCategories }) => {
 	// <SomeComp handleSomething={handleSomething} />
 
 	return (
-		<>
-			<h1>TRAINING_RESOURCES IS_WORKING</h1>
-		</>
+		<div className="training-resources-categories">
+			{trainingCategories.map((group, i) => {
+				return (
+					<div className="content-card" key={i}>
+						<h1 className="cotnent-card-header">{group.categoryName}</h1>
+						<p className="category-overview">{group.categoryOverview}</p>
+						{group.trainingResources.map((entry, i) => {
+							return (
+								<div className="training-resource" key={i}>
+									<a
+										className="link-to-resource"
+										href={entry.resourceUrl}
+										target="_blank"
+									>
+										<h2>{entry.resourceTitle}</h2>
+									</a>
+									<div className="about-resource">
+										{entry.aboutResource}
+									</div>
+								</div>
+							);
+						})}
+					</div>
+				);
+			})}
+		</div>
 	);
 };
 
