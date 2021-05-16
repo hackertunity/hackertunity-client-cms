@@ -6,9 +6,8 @@ import React from 'react';
 // Utilized components imported
 // import SomeComp from './';
 
-const ComponentName = ({ someNode }) => {
-	console.log('>> TEST RENDER SOME_COMPONENT:');
-	console.log({ someNode });
+const TrainingResources = ({ trainingCategories }) => {
+	console.log('>> TEST RENDER TRAINING_RESOURCES:', trainingCategories);
 
 	// const handleSomething = () => {
 	// 	console.log('>>');
@@ -17,9 +16,9 @@ const ComponentName = ({ someNode }) => {
 
 	return (
 		<>
-			<h1>SOME_COMPONENT IS_WORKING</h1>
+			<h1>TRAINING_RESOURCES IS_WORKING</h1>
 		</>
 	);
 };
 
-export default ComponentName;
+export default TrainingResources;

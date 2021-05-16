@@ -221,41 +221,46 @@ collections:
                   required: false,
                }
              - {
-                  label: Resource Groups,
-                  name: resource-groups,
+                  label: Training Categories,
+                  name: trainingCategories,
                   widget: list,
                   fields:
                      [
                         {
-                           label: Group Header,
-                           name: group-header,
+                           label: Category Name,
+                           name: categoryName,
                            widget: string,
+                           required: true,
                         },
                         {
-                           label: Field overview,
-                           name: field-overview,
-                           widget: text,
+                           label: Category Overview,
+                           name: categoryOverview,
+                           widget: 'markdown',
+                           required: false,
                         },
                         {
                            label: Training Resources,
-                           name: training-resources,
+                           name: trainingResources,
                            widget: list,
                            fields:
                               [
                                  {
                                     label: Resource Title,
-                                    name: resource-title,
+                                    name: resourceTitle,
                                     widget: string,
+                                    required: true,
                                  },
                                  {
                                     label: Resource Url,
-                                    name: resource-url,
+                                    name: resourceUrl,
                                     widget: string,
+                                    required: true,
                                  },
                                  {
                                     label: About Resource,
-                                    name: about-resource,
-                                    widget: text,
+                                    name: aboutResource,
+                                    widget: 'markdown',
+                                    required: false,
                                  },
                               ],
                         },
