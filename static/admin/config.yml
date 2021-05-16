@@ -221,20 +221,22 @@ collections:
                   required: false,
                }
              - {
-                  label: Resource Groups,
-                  name: resource-groups,
+                  label: Training Categories,
+                  name: training-categories,
                   widget: list,
                   fields:
                      [
                         {
-                           label: Group Header,
-                           name: group-header,
+                           label: Category Name,
+                           name: category-name,
                            widget: string,
+                           required: true,
                         },
                         {
-                           label: Field overview,
-                           name: field-overview,
-                           widget: text,
+                           label: Category Overview,
+                           name: category-overview,
+                           widget: 'markdown',
+                           required: false,
                         },
                         {
                            label: Training Resources,
@@ -255,7 +257,8 @@ collections:
                                  {
                                     label: About Resource,
                                     name: about-resource,
-                                    widget: text,
+                                    widget: 'markdown',
+                                    required: false,
                                  },
                               ],
                         },
