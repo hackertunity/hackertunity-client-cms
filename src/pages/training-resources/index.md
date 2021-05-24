@@ -16,12 +16,12 @@ trainingCategories:
       `<br><br>`
 
 
-      This is a great option for people who like to fiddle with computer settings, learn new software, or get the latest gadgets. And if that doesn't sound like you, there's no need to fret: Google search becomes any desk top support technician's best friend.
+      This is a great option for people who like to fiddle with computer settings, learn new software, or get the latest gadgets. But if that doesn't sound like you, there's no need to fret: Google search becomes any desk top support technician's best friend.
     trainingResources:
       - resourceTitle: Tech Support in 20 Hours
         resourceUrl: https://www.coursera.org/learn/technical-suppotrt-fundamentals
         aboutResource: |-
-          1 course - Approx. 20 hours
+          * 1 course - Approx. 20 hours
 
           Job titles: Desktop Support; IT Support Specialist
       - resourceTitle: Google IT Support Professional Certificate
