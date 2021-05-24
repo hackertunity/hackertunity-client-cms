@@ -31,7 +31,20 @@ trainingCategories:
 
           Job titles: Desktop Support; IT Support; Junior System Administrator
   - categoryName: IT Network Engineering Careers
-    categoryOverview: Some more **text** on this subject instead...
+    categoryOverview: >-
+      A career as a Network Engineer is great for someone who wants to have a
+      lot of options within the tech industry. A network is any collection of
+      devices that can communicate with each other. Your printer and your
+      computer share a network; if you log in to an intranet at work, that's a
+      network; even the Internet itself can be considered a network. Because of
+      this, Network Engineers are a cornerstone in any IT department and build
+      the foundation for a safe and secure network.
+
+
+      `<br><br>`
+
+
+      The cool thing about network engineering is that you don't have to have a super technical mind to start with; you just need to be curious about how things connect and able to turn a big picture into small details.
     trainingResources:
       - resourceTitle: Cisco Networking Basics
         resourceUrl: https://www.coursera.org/specializations/networking-basics
