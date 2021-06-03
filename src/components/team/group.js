@@ -31,12 +31,14 @@ const TeamGroup = ({ group }) => {
 								src={picSrc}
 								alt={member.profileName}
 							/>
-							<h3 className="group team-member-title">
-								{member.profileName},&nbsp;{member.profileTitle}
-							</h3>
-							<p className="group team-member-profile">
-								{member.profileBlurb}
-							</p>
+							<div>
+								<h3 className="group team-member-title">
+									{member.profileName},&nbsp;{member.profileTitle}
+								</h3>
+								<p className="group team-member-profile">
+									{member.profileBlurb}
+								</p>
+							</div>
 						</div>
 					);
 				})}
