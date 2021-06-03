@@ -15,7 +15,7 @@ const Footer = class extends React.Component {
 			if (!isHomePage) {
 				return (
 					<div className="content has-text-centered">
-						<img src={logo} alt="Kaldi" style={{ width: "14em" }} />
+						<img src={logo} alt="Hackertunity" style={{ width: "14em", height: "14em" }} />
 					</div>
 				);
 			} else {
