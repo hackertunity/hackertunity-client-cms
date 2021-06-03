@@ -27,7 +27,6 @@ const PageBannerHead = ({ image, title }) => {
 							: ''
 					})`,
 					backgroundPosition: `top left`,
-					backgroundAttachment: `fixed`,
 				}}
 			></div>
 			<PageTitle title={title} />
