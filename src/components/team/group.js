@@ -7,7 +7,7 @@ import React from 'react';
 // import SomeComp from './';
 
 const TeamGroup = ({ group }) => {
-	console.log('>> TEST RENDER TEAM_GROUP:', group);
+	// console.log('>> TEST RENDER TEAM_GROUP:', group);
 
 	// const handleSomething = () => {
 	// 	console.log('>>');
@@ -31,12 +31,14 @@ const TeamGroup = ({ group }) => {
 								src={picSrc}
 								alt={member.profileName}
 							/>
-							<h3 className="group team-member-title">
-								{member.profileName},&nbsp;{member.profileTitle}
-							</h3>
-							<p className="group team-member-profile">
-								{member.profileBlurb}
-							</p>
+							<div>
+								<h3 className="group team-member-title">
+									{member.profileName},&nbsp;{member.profileTitle}
+								</h3>
+								<p className="group team-member-profile">
+									{member.profileBlurb}
+								</p>
+							</div>
 						</div>
 					);
 				})}

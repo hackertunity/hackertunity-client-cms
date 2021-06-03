@@ -9,11 +9,22 @@ import vimeo from '../img/social/vimeo.svg';
 
 const Footer = class extends React.Component {
 	render() {
+		const { isHomePage } = this.props;
+
+		const Footerlogo = () => {
+			if (!isHomePage) {
+				return (
+					<div className="content has-text-centered">
+						<img src={logo} alt="Hackertunity" style={{ width: "14em", height: "14em" }} />
+					</div>
+				);
+			} else {
+				return <></>;
+			}
+		};
 		return (
 			<footer className="footer has-background-black has-text-white-ter">
-				<div className="content has-text-centered">
-					<img src={logo} alt="Kaldi" style={{ width: '14em' }} />
-				</div>
+				{Footerlogo()}
 				<div className="content has-text-centered has-background-black has-text-white-ter">
 					<div className="container has-background-black has-text-white-ter">
 						<div style={{ maxWidth: '100vw' }} className="columns">
