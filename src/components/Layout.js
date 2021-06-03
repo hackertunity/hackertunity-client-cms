@@ -6,7 +6,7 @@ import './styles/all.sass';
 import useSiteMetadata from './SiteMetadata';
 import { withPrefix } from 'gatsby';
 
-const TemplateWrapper = ({ children }) => {
+const TemplateWrapper = ({ children, isHomePage }) => {
 	const { title, description } = useSiteMetadata();
 	return (
 		<div className="light-theme">
@@ -50,7 +50,7 @@ const TemplateWrapper = ({ children }) => {
 			</Helmet>
 			<Navbar />
 			<main className="main-content">{children}</main>
-			<Footer />
+			<Footer isHomePage={isHomePage} />
 		</div>
 	);
 };

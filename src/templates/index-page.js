@@ -52,7 +52,8 @@ const IndexPage = ({ data }) => {
 	const { frontmatter } = data.markdownRemark;
 
 	return (
-		<Layout>
+		<Layout
+			isHomePage={true}>
 			<IndexPageTemplate
 				image={frontmatter.image}
 				tagline={frontmatter.tagline}

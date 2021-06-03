@@ -7,7 +7,7 @@ import React from 'react';
 // import SomeComp from './';
 
 const TeamGroup = ({ group }) => {
-	console.log('>> TEST RENDER TEAM_GROUP:', group);
+	// console.log('>> TEST RENDER TEAM_GROUP:', group);
 
 	// const handleSomething = () => {
 	// 	console.log('>>');
