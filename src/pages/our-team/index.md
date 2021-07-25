@@ -27,6 +27,10 @@ organization:
       groupType: board
     - teamName: Technology Committee
       teamMembers:
+        - profileName: Tim Losee
+          profileBlurb: This mf.
+          profileTitle: Director of Technology
+          profilePicture: /img/apple-touch-icon.png
         - profileName: Emily Solis
           profilePicture: /img/apple-touch-icon.png
           profileTitle: Member of the Tech Committee
@@ -48,10 +52,6 @@ organization:
             moon, and Taurus Rising. Her favorite things are traveling, Netflix,
             and snacks. Pronouns: She/her."
           showProfile: true
-        - profileName: Tim Losee
-          profileBlurb: This mf.
-          profileTitle: Director of Technology
-          profilePicture: /img/apple-touch-icon.png
       showGroup: true
       groupType: committee
     - teamName: Events Committee
