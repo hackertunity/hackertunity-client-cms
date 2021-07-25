@@ -76,7 +76,7 @@ organization:
       teamMembers:
         - profileName: Tim Grove
           profileTitle: Director of Events
-          profilePicture: /img/apple-touch-icon.png
+          profilePicture: /img/headshot_timg.png
           profileBlurb: Tim has moved over 20 times in his life, but mostly grew up in
             Riverside, CA and now lives in Los Angeles. He loves cultivating
             experiences that are inclusive, are “edutaining”, and enact positive
