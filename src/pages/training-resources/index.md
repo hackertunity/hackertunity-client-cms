@@ -6,14 +6,13 @@ image: /img/full-frame-shot-of-stadium-247839.jpeg
 heading: Career Options
 trainingCategories:
   - categoryName: Desktop Careers
-    categoryOverview: "A career in desktop support is a great starting point for
-      people who want to launch a career in the technology sector. When you
-      think desktop support, think about how you might call IT to help with an
-      issue, or a company plan for managing those pesky Windows
-      updates.  \\nThis is a great option for people who like to fiddle with
-      computer settings, learn new software, or get the latest gadgets. But if
-      that doesn't sound like you, there's no need to fret: Google search
-      becomes any desk top support technician's best friend."
+    categoryOverview: >-
+      A career in desktop support is a great starting point for people who want
+      to launch a career in the technology sector. When you think desktop
+      support, think about how you might call IT to help with an issue, or a
+      company plan for managing those pesky Windows updates.  <br/>
+
+      This is a great option for people who like to fiddle with computer settings, learn new software, or get the latest gadgets. But if that doesn't sound like you, there's no need to fret: Google search becomes any desk top support technician's best friend.
     trainingResources:
       - resourceTitle: Tech Support in 20 Hours
         resourceUrl: https://www.coursera.org/learn/technical-suppotrt-fundamentals
