@@ -48,6 +48,10 @@ organization:
             moon, and Taurus Rising. Her favorite things are traveling, Netflix,
             and snacks. Pronouns: She/her."
           showProfile: true
+        - profileName: Tim Losee
+          profileBlurb: This mf.
+          profileTitle: Director of Technology
+          profilePicture: /img/apple-touch-icon.png
       showGroup: true
       groupType: committee
     - teamName: Events Committee
