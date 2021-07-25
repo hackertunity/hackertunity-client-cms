@@ -13,7 +13,7 @@ trainingCategories:
       company plan for managing those pesky Windows updates.  
 
 
-      This is a great option for people who like to fiddle with computer settings, learn new software, or get the latest gadgets. But if that doesn't sound like you, there's no need to fret: Google search becomes any desk top support technician's best friend.
+      \nThis is a great option for people who like to fiddle with computer settings, learn new software, or get the latest gadgets. But if that doesn't sound like you, there's no need to fret: Google search becomes any desk top support technician's best friend.
     trainingResources:
       - resourceTitle: Tech Support in 20 Hours
         resourceUrl: https://www.coursera.org/learn/technical-suppotrt-fundamentals
