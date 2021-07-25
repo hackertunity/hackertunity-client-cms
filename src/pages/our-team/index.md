@@ -23,15 +23,6 @@ organization:
             he can. He’s a nice young man and sensitive, please don’t be too
             loud around him.
           showProfile: true
-        - profileName: Leo Yockey
-          profilePicture: /img/apple-touch-icon.png
-          profileTitle: Treasurer & Co-Founder & Member of the Tech Committee
-          profileBlurb: Leo is a freelance Software Engineer based in Los Angeles. He
-            appreciates the value of opportunity and believes in technology’s
-            ability to make the world better for the whole of humanity, not just
-            a privileged few. While also an avid traveler, Leo is primarily a
-            homebody who spends his free time reading and watching sports. Send
-            him memes.
       showGroup: true
       groupType: board
     - teamName: Technology Committee
@@ -56,19 +47,6 @@ organization:
             to build a better future. Also, she is a Sagittarius sun, Scorpio
             moon, and Taurus Rising. Her favorite things are traveling, Netflix,
             and snacks. Pronouns: She/her."
-          showProfile: true
-      showGroup: true
-      groupType: committee
-    - teamName: Public Relations Committee
-      teamMembers:
-        - profileName: Corrine Rincon
-          profileTitle: Director of Public Relations
-          profilePicture: /img/apple-touch-icon.png
-          profileBlurb: "Corrine is an avid baker and horror enthusiast with a background
-            in musical theater. She is a proud member of the LGBTQ+ community
-            and in her free time she can be found streaming video games, singing
-            and watching cartoons. They are always looking for new gamer
-            buddies. Pronouns: She/They"
           showProfile: true
       showGroup: true
       groupType: committee
