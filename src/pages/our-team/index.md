@@ -70,7 +70,6 @@ organization:
     - teamName: Pet Committee
       groupType: contributors
 ---
+### About Us
 
-### Test copy
-
-This is some text for an example team page
+The team at Hackertunity is made up of people who all care deeply about providing opportunities for those who have traditionally been left out of the tech industry.
