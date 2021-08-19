@@ -39,7 +39,7 @@ trainingCategories:
       the foundation for a safe and secure network.
 
 
-      The cool thing about network engineering is that you don't have to have a super technical mind to start with; you just need to be curious about how things connect and able to turn a big picture into small details.
+      The cool thing about network engineering is that you don't have to have a super technical mind to start with; you just need to be curious about how things connect and be able to turn a big picture into small details.
     trainingResources:
       - resourceTitle: Cisco Networking Basics
         resourceUrl: https://www.coursera.org/specializations/networking-basics
