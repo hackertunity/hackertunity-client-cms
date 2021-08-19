@@ -2,7 +2,7 @@
 templateKey: training-resources-page
 path: /training-resources
 title: Launching a Career in Tech
-image: /img/full-frame-shot-of-stadium-247839.jpeg
+image: /img/training-resources-medium.jpeg
 heading: Career Options
 trainingCategories:
   - categoryName: Desktop Careers
