@@ -2,7 +2,7 @@
 templateKey: team-page
 path: /our-team
 title: The Team
-image: /img/full-frame-shot-of-stadium-247839.jpeg
+image: /img/woman-programming-on-a-notebook-1181359.jpeg
 organization:
   teamGroups:
     - teamName: The Board
