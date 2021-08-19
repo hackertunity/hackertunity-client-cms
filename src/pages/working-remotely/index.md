@@ -1,17 +1,13 @@
 ---
-templateKey: 'default-page'
+templateKey: default-page
 path: /working-remotely
-title: How we work Remotely
+title: Affordable Tech
+image: /img/computers.jpeg
 ---
+### Reduced-Cost Internet
 
-### Point One
+HighSpeedInternet.com has many amazing resources to help low-income families get affordable internet. Check out their [comprehensive guide for free and low-cost internet](https://www.highspeedinternet.com/resources/are-there-government-programs-to-help-me-get-internet-service).
 
-This is some text for an example remote work page
+### Reduced-Cost Computers
 
-### Point Two
-
-This is some text for an example remote work page
-
-### Point Three
-
-This is some text for an example remote work page
+As a 501(c)(3), PCs for People has a mission "to provide a bridge across the digital divide that offers employment and educational opportunities to low-income individuals, families with children, and those with disabilities." To see if you qualify for a discounted computer, check your eligibility [here](https://www.pcsforpeople.org/eligibility/).
