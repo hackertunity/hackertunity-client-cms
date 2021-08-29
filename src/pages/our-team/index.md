@@ -28,7 +28,9 @@ organization:
     - teamName: Technology Committee
       teamMembers:
         - profileName: Tim Losee
-          profileBlurb: This mf.
+          profileBlurb: Tim was born in the Antelope Valley and fought tooth and nail to
+            get into the tech industry. He now has over 9 years of experience as
+            a network engineer.
           profileTitle: Director of Technology
           profilePicture: /img/headshot_timl.png
         - profileName: Emily Solis
@@ -58,7 +60,8 @@ organization:
           profileBlurb: Bla bla bla
         - profileName: Boyan Liu
           profileTitle: Member of the Tech Committee
-          profileBlurb: Bla bla
+          profileBlurb: "Boyan graduated from University of Maryland with a B.S. in
+            Computer Science. He works as a junior web developer. "
           profilePicture: /img/headshot_boyan.png
       showGroup: true
       groupType: committee
