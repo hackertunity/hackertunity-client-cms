@@ -56,6 +56,10 @@ organization:
           profilePicture: /img/apple-touch-icon.png
           profileTitle: Member of the Tech Committee
           profileBlurb: Bla bla bla
+        - profileName: Boyan Liu
+          profileTitle: Member of the Tech Committee
+          profileBlurb: Bla bla
+          profilePicture: /img/headshot_boyan.png
       showGroup: true
       groupType: committee
     - teamName: Events Committee
