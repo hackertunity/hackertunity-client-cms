@@ -2,7 +2,7 @@
 templateKey: team-page
 path: /our-team
 title: The Team
-image: /img/woman-programming-on-a-notebook-1181359.jpeg
+image: /img/woman-programming-on-a-notebook-1181359-aspect-cropped.jpg
 organization:
   teamGroups:
     - teamName: The Board
@@ -30,7 +30,7 @@ organization:
         - profileName: Tim Losee
           profileBlurb: This mf.
           profileTitle: Director of Technology
-          profilePicture: /img/apple-touch-icon.png
+          profilePicture: /img/headshot_timl.jpeg
         - profileName: Emily Solis
           profilePicture: /img/apple-touch-icon.png
           profileTitle: Member of the Tech Committee
