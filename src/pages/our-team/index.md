@@ -30,7 +30,7 @@ organization:
         - profileName: Tim Losee
           profileBlurb: This mf.
           profileTitle: Director of Technology
-          profilePicture: /img/headshot_timl.jpeg
+          profilePicture: /img/headshot_timl.png
         - profileName: Emily Solis
           profilePicture: /img/apple-touch-icon.png
           profileTitle: Member of the Tech Committee
