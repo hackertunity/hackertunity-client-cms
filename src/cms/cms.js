@@ -21,8 +21,8 @@ CMS.registerPreviewTemplate('our-team', TeamPagePreview);
 CMS.registerPreviewTemplate('acknowledgements', DefaultPagePreview);
 
 // CAREER CATALYSTS
-CMS.registerPreviewTemplate('training-resources', TrainingResourcesPagePreview);
-CMS.registerPreviewTemplate('blog', BlogPostPreview); // << JOB FEED TBD
+// CMS.registerPreviewTemplate('training-resources', TrainingResourcesPagePreview);
+// CMS.registerPreviewTemplate('blog', BlogPostPreview); // << JOB FEED TBD
 CMS.registerPreviewTemplate('affordable-tech', DefaultPagePreview);
 
 // NOT USING RIGHT NOW

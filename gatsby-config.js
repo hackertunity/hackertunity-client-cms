@@ -23,18 +23,18 @@ module.exports = {
 				]
 			},
 			{
-				name: 'Career Catalysts',
+				name: 'Resources',
 				path: '',
 				topLink: false,
 				subMenu: [
-					{
-						name: 'Training Resources',
-						path: '/training-resources'
-					},
-					{
-						name: 'Job Feed',
-						path: '/blog'
-					},
+					// {
+					// 	name: 'Training Resources',
+					// 	path: '/training-resources'
+					// },
+					// {
+					// 	name: 'Job Feed',
+					// 	path: '/blog'
+					// },
 					{
 						name: 'Affordable Tech',
 						path: '/affordable-tech'
