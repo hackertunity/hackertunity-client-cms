@@ -23,7 +23,7 @@ CMS.registerPreviewTemplate('acknowledgements', DefaultPagePreview);
 // CAREER CATALYSTS
 CMS.registerPreviewTemplate('training-resources', TrainingResourcesPagePreview);
 CMS.registerPreviewTemplate('blog', BlogPostPreview); // << JOB FEED TBD
-CMS.registerPreviewTemplate('working-remotely', DefaultPagePreview);
+CMS.registerPreviewTemplate('affordable-tech', DefaultPagePreview);
 
 // NOT USING RIGHT NOW
 // CMS.registerPreviewTemplate('about', AboutPagePreview)

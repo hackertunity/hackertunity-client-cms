@@ -15,7 +15,7 @@ const Footer = class extends React.Component {
 			if (!isHomePage) {
 				return (
 					<div className="content has-text-centered">
-						<img src={logo} alt="Hackertunity" style={{ width: "14em", height: "14em" }} />
+						<img src={logo} alt="Hackertunity" style={{ width: '14em', height: '14em' }} />
 					</div>
 				);
 			} else {
@@ -32,10 +32,7 @@ const Footer = class extends React.Component {
 								<section className="menu">
 									<ul className="menu-list">
 										<li>
-											<Link
-												to="/our-mission"
-												className="navbar-item"
-											>
+											<Link to="/our-mission" className="navbar-item">
 												Our Mission
 											</Link>
 										</li>
@@ -45,10 +42,7 @@ const Footer = class extends React.Component {
 											</Link>
 										</li>
 										<li>
-											<Link
-												className="navbar-item"
-												to="/acknowledgements"
-											>
+											<Link className="navbar-item" to="/acknowledgements">
 												Acknowledgements
 											</Link>
 										</li>
@@ -59,10 +53,7 @@ const Footer = class extends React.Component {
 								<section>
 									<ul className="menu-list">
 										<li>
-											<Link
-												className="navbar-item"
-												to="/training-resources"
-											>
+											<Link className="navbar-item" to="/training-resources">
 												Training Resources
 											</Link>
 										</li>
@@ -72,36 +63,18 @@ const Footer = class extends React.Component {
 											</Link>
 										</li>
 										<li>
-											<Link
-												className="navbar-item"
-												to="/working-remotely"
-											>
-												Working Remotely
+											<Link className="navbar-item" to="/affordable-tech">
+												Affordable Tech
 											</Link>
 										</li>
 									</ul>
 								</section>
 							</div>
-							<div
-								className="column is-4 social"
-								style={{ display: 'none' }}
-							>
-								<a
-									title="facebook"
-									href="https://facebook.com"
-									target="_blank"
-								>
-									<img
-										src={facebook}
-										alt="Facebook"
-										style={{ width: '1em', height: '1em' }}
-									/>
+							<div className="column is-4 social" style={{ display: 'none' }}>
+								<a title="facebook" href="https://facebook.com" target="_blank">
+									<img src={facebook} alt="Facebook" style={{ width: '1em', height: '1em' }} />
 								</a>
-								<a
-									title="twitter"
-									href="https://twitter.com"
-									target="_blank"
-								>
+								<a title="twitter" href="https://twitter.com" target="_blank">
 									<img
 										className="fas fa-lg"
 										src={twitter}
@@ -109,27 +82,11 @@ const Footer = class extends React.Component {
 										style={{ width: '1em', height: '1em' }}
 									/>
 								</a>
-								<a
-									title="instagram"
-									href="https://instagram.com"
-									target="_blank"
-								>
-									<img
-										src={instagram}
-										alt="Instagram"
-										style={{ width: '1em', height: '1em' }}
-									/>
+								<a title="instagram" href="https://instagram.com" target="_blank">
+									<img src={instagram} alt="Instagram" style={{ width: '1em', height: '1em' }} />
 								</a>
-								<a
-									title="vimeo"
-									href="https://vimeo.com"
-									target="_blank"
-								>
-									<img
-										src={vimeo}
-										alt="Vimeo"
-										style={{ width: '1em', height: '1em' }}
-									/>
+								<a title="vimeo" href="https://vimeo.com" target="_blank">
+									<img src={vimeo} alt="Vimeo" style={{ width: '1em', height: '1em' }} />
 								</a>
 							</div>
 						</div>

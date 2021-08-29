@@ -18,14 +18,14 @@ const PageTitle = ({ title }) => {
 				padding: `1rem 1rem 1rem 6rem`,
 				opacity: `.85`,
 				position: `relative`,
-				top: `-350px`,
+				top: `-350px`
 			}}
 		>
 			<h2
 				className="column is-10 is-offset-1"
 				style={{
 					position: `relative`,
-					padding: `0 0 0 2rem`,
+					padding: `0 0 0 2rem`
 				}}
 			>
 				{title}

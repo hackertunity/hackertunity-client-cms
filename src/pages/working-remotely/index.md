@@ -1,9 +1,10 @@
 ---
 templateKey: default-page
-path: /working-remotely
+path: /affordable-tech
 title: Affordable Tech
 image: /img/computers.jpeg
 ---
+
 ### Reduced-Cost Internet
 
 HighSpeedInternet.com has many amazing resources to help low-income families get affordable internet. Check out their [comprehensive guide for free and low-cost internet](https://www.highspeedinternet.com/resources/are-there-government-programs-to-help-me-get-internet-service).
