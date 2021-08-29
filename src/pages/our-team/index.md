@@ -52,6 +52,10 @@ organization:
             moon, and Taurus Rising. Her favorite things are traveling, Netflix,
             and snacks. Pronouns: She/her."
           showProfile: true
+        - profileName: David Pineda
+          profilePicture: /img/apple-touch-icon.png
+          profileTitle: Member of the Tech Committee
+          profileBlurb: Bla bla bla
       showGroup: true
       groupType: committee
     - teamName: Events Committee
