@@ -2,7 +2,7 @@
 templateKey: default-page
 path: /affordable-tech
 title: Affordable Tech
-image: /img/computers.jpeg
+image: /img/computers-cropped.png
 ---
 
 ### Reduced-Cost Internet
