@@ -32,7 +32,7 @@ organization:
           profileTitle: Director of Technology
           profilePicture: /img/headshot_timl.png
         - profileName: Emily Solis
-          profilePicture: /img/apple-touch-icon.png
+          profilePicture: /img/headshot_emily.png
           profileTitle: Member of the Tech Committee
           profileBlurb: Emily has volunteered with non-profit organizations since the age
             of 18. She has made several professional career transitions, finding
@@ -43,7 +43,7 @@ organization:
             Henderson and Lake Tahoe.
           showProfile: true
         - profileName: Valerie Solis
-          profilePicture: /img/apple-touch-icon.png
+          profilePicture: /img/headshot_val.png
           profileTitle: Member of the Tech Committee
           profileBlurb: "Valerie is a Cisco certified network engineer based in Columbus,
             Ohio. She believes the field of tech should be all inclusive and
