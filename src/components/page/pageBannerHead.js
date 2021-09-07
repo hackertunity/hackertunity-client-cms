@@ -20,13 +20,9 @@ const PageBannerHead = ({ image, title }) => {
 				className="full-width-image margin-top-0"
 				style={{
 					backgroundImage: `url(${
-						image
-							? !!image.childImageSharp
-								? image.childImageSharp.fluid.src
-								: image
-							: ''
+						image ? (!!image.childImageSharp ? image.childImageSharp.fluid.src : image) : ''
 					})`,
-					backgroundPosition: `top left`,
+					backgroundPosition: `top left`
 				}}
 			></div>
 			<PageTitle title={title} />
