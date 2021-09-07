@@ -12,7 +12,9 @@ export const IndexPageTemplate = ({ image, tagline, taglineTwo, taglineThree }) 
 			style={{
 				backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
 				backgroundPosition: `top left`,
-				backgroundSize: `100%`
+				backgroundSize: `100%`,
+				backgroundRepeat: `no-repeat`,
+				backgroundColor: `#e1b901`
 			}}
 		>
 			<div

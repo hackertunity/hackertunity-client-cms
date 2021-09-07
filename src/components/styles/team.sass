@@ -19,7 +19,7 @@
 	.team-member-avatar
 		width: 120px;
 		height: 120px;
-		margin-right: 1.25rem;
+		margin: 0 1.25rem .25rem 0;
 		// border: 1px solid fuchsia;
 
 	.team-member-title
@@ -33,10 +33,12 @@
 
 @media screen and (max-width: 550px)
 
-	.group.members
-		.team-member-avatar
-			float: none;
-			// border: 1px solid fuchsia;
+	.group-members
+		.team-member
+			flex-direction: column;
+			.team-member-avatar
+				float: none;
+				// border: 1px solid red;
 
 		.team-member-profile
 			padding-left: 1rem;
