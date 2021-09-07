@@ -57,7 +57,12 @@ organization:
         - profileName: David Pineda
           profilePicture: /img/apple-touch-icon.png
           profileTitle: Member of the Tech Committee
-          profileBlurb: Bla bla bla
+          profileBlurb: David is one of those break things to see how it works kinda guys.
+            Whether that's fixing cars or fixing websites is more often than not
+            a good learned lesson. But with 11 years of web development
+            experience he's picked up a trick or two making sure that his
+            projects are functional and performant. Always looking for a good
+            challenge he sees the benefit in learning by doing.
         - profileName: Boyan Liu
           profileTitle: Member of the Tech Committee
           profileBlurb: "Boyan graduated from University of Maryland with a B.S. in
