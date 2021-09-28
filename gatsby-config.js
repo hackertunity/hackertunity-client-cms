@@ -38,6 +38,10 @@ module.exports = {
 					{
 						name: 'Affordable Tech',
 						path: '/affordable-tech'
+					},
+					{
+						name: 'Fun Learning',
+						path: '/fun-learning'
 					}
 				]
 			}
