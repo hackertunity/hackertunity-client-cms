@@ -23,6 +23,12 @@ organization:
             he can. He’s a nice young man and sensitive, please don’t be too
             loud around him.
           showProfile: true
+        - profileName: Tim Losee
+          profileTitle: Vice President/Director of Technology
+          profileBlurb: Tim was born in the Antelope Valley and fought tooth and nail to
+            get into the tech industry. He now has over 9 years of experience as
+            a network engineer.
+          profilePicture: /img/headshot_timl.png
       showGroup: true
       groupType: board
     - teamName: Technology Committee
