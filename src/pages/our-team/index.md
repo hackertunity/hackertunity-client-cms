@@ -16,6 +16,12 @@ organization:
             in the world.
           profilePicture: /img/headshot_steph.png
           showProfile: true
+        - profileName: Tim Losee
+          profileTitle: Vice President & Director of Technology
+          profileBlurb: Tim was born in the Antelope Valley and fought tooth and nail to
+            get into the tech industry. He now has over 9 years of experience as
+            a network engineer.
+          profilePicture: /img/headshot_timl.png
         - profileName: Aaron Hampton
           profilePicture: /img/headshot_aaron.png
           profileTitle: Secretary & Co-Founder
@@ -23,22 +29,10 @@ organization:
             he can. He’s a nice young man and sensitive, please don’t be too
             loud around him.
           showProfile: true
-        - profileName: Tim Losee
-          profileTitle: Vice President/Director of Technology
-          profileBlurb: Tim was born in the Antelope Valley and fought tooth and nail to
-            get into the tech industry. He now has over 9 years of experience as
-            a network engineer.
-          profilePicture: /img/headshot_timl.png
       showGroup: true
       groupType: board
     - teamName: Technology Committee
       teamMembers:
-        - profileName: Tim Losee
-          profileBlurb: Tim was born in the Antelope Valley and fought tooth and nail to
-            get into the tech industry. He now has over 9 years of experience as
-            a network engineer.
-          profileTitle: Director of Technology
-          profilePicture: /img/headshot_timl.png
         - profileName: Emily Solis
           profilePicture: /img/headshot_emily.png
           profileTitle: Member of the Tech Committee
@@ -61,7 +55,7 @@ organization:
             and snacks. Pronouns: She/her."
           showProfile: true
         - profileName: David Pineda
-          profilePicture: /img/apple-touch-icon.png
+          profilePicture: /img/headshot_boyan.png
           profileTitle: Member of the Tech Committee
           profileBlurb: David is one of those break things to see how it works kinda guys.
             Whether that's fixing cars or fixing websites is more often than not
