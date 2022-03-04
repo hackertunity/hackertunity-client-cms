@@ -63,24 +63,6 @@ organization:
             experience he's picked up a trick or two making sure that his
             projects are functional and performant. Always looking for a good
             challenge he sees the benefit in learning by doing.
-        - profileName: Boyan Liu
-          profileTitle: Member of the Tech Committee
-          profileBlurb: "Boyan graduated from University of Maryland with a B.S. in
-            Computer Science. He works as a junior web developer. "
-          profilePicture: /img/headshot_boyan.png
-      showGroup: true
-      groupType: committee
-    - teamName: Events Committee
-      teamMembers:
-        - profileName: Tim Grove
-          profileTitle: Director of Events
-          profilePicture: /img/headshot_timg.png
-          profileBlurb: Tim has moved over 20 times in his life, but mostly grew up in
-            Riverside, CA and now lives in Los Angeles. He loves cultivating
-            experiences that are inclusive, are “edutaining”, and enact positive
-            change for the community. He also does improv and stuff — he even
-            improvised this whole bio. Book him now!
-          showProfile: true
       showGroup: true
       groupType: committee
     - teamName: Pet Committee
