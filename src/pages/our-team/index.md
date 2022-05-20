@@ -11,9 +11,11 @@ organization:
           profileTitle: President & Founder
           profileBlurb: Stephanie was born and raised in Lancaster, California and has a
             bachelor’s degree in Information Systems from the University of
-            California, Riverside. She plays roller derby and can be a bit
-            aggressive at times. But she really just wants equality and justice
-            in the world.
+            California, Riverside. She is also working on her Master's of
+            Science in Applied Artificial Intelligence through the University fo
+            San Diego. She enjoys karaoke and can be a bit loud and aggressive
+            if we're being honest. She really just wants equality and justice in
+            the world.
           profilePicture: /img/headshot_steph.png
           showProfile: true
         - profileName: Tim Losee
@@ -29,6 +31,10 @@ organization:
             he can. He’s a nice young man and sensitive, please don’t be too
             loud around him.
           showProfile: true
+        - profileName: Jess Bumbaris
+          profilePicture: /img/headshot_boyan.png
+          profileTitle: Treasurer
+          profileBlurb: Jess is pretty cool, but she hasn't written up her bio yet.
       showGroup: true
       groupType: board
     - teamName: Technology Committee
