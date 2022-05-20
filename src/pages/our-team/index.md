@@ -71,6 +71,13 @@ organization:
             challenge he sees the benefit in learning by doing.
       showGroup: true
       groupType: committee
+    - teamName: Public Relations Committee
+      groupType: committee
+      teamMembers:
+        - profileName: Melissa Warr
+          profilePicture: /img/headshot_boyan.png
+          profileTitle: Director of Public Relations
+          profileBlurb: Melissa is also pretty cool, but she hasn't written up her bio yet.
     - teamName: Pet Committee
       groupType: contributors
 ---
