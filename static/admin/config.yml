@@ -31,6 +31,7 @@ collections:
 
     - name: 'pages'
       label: 'Pages'
+      # NOTE: ADD DIRECTORY FILE ENTRIES HERE >>
       files:
           - file: 'src/pages/index.md'
             label: 'Landing Page'
@@ -165,6 +166,16 @@ collections:
           - file: 'src/pages/fun-learning/index.md'
             label: 'Fun Learning'
             name: 'fun-learning'
+            fields:
+                - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'default-page' }
+                - { label: Title, name: title, widget: string }
+                - { label: Page Banner, name: image, widget: image }
+                - { label: Heading, name: heading, widget: string, required: false }
+                - { label: Body, name: body, widget: 'markdown', required: false }
+
+          - file: 'src/pages/donate/index.md'
+            label: 'Donate'
+            name: 'donate'
             fields:
                 - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'default-page' }
                 - { label: Title, name: title, widget: string }

@@ -15,16 +15,19 @@ CMS.registerMediaLibrary(cloudinary);
 
 CMS.registerPreviewTemplate('index', IndexPagePreview);
 
-// ABOUT US
+// - ABOUT US
 CMS.registerPreviewTemplate('our-mission', DefaultPagePreview);
 CMS.registerPreviewTemplate('our-team', TeamPagePreview);
 CMS.registerPreviewTemplate('acknowledgements', DefaultPagePreview);
 
-// RESOURCES
+// - RESOURCES
 // CMS.registerPreviewTemplate('training-resources', TrainingResourcesPagePreview);
 // CMS.registerPreviewTemplate('blog', BlogPostPreview); // << JOB FEED TBD
 CMS.registerPreviewTemplate('affordable-tech', DefaultPagePreview);
 CMS.registerPreviewTemplate('fun-learning', DefaultPagePreview);
+
+// - GET INVOLVED
+CMS.registerPreviewTemplate('donate', DefaultPagePreview);
 
 // NOT USING RIGHT NOW
 // CMS.registerPreviewTemplate('about', AboutPagePreview)
