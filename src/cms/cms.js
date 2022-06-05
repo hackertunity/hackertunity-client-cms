@@ -28,6 +28,7 @@ CMS.registerPreviewTemplate('fun-learning', DefaultPagePreview);
 
 // - GET INVOLVED
 CMS.registerPreviewTemplate('donate', DefaultPagePreview);
+CMS.registerPreviewTemplate('volunteer', DefaultPagePreview);
 
 // NOT USING RIGHT NOW
 // CMS.registerPreviewTemplate('about', AboutPagePreview)
