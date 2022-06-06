@@ -2,10 +2,10 @@
 templateKey: default-page
 path: /donate
 title: Donate
-image: /img/auditorium-benches-chairs-class-207691.jpeg
+image: /img/pexels-anna-tis-4303760.jpeg
 heading: Hackertunity, Inc. | Donate
 ---
 
-# mock cotnent for the donate page
+# Let's give a headline here!
 
-Here is some copy.
+Your donation will help teach under-served students how to code and further our mission to diversify tech. Thank you so much for making a difference!
