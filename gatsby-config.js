@@ -40,6 +40,21 @@ module.exports = {
 						path: '/affordable-tech'
 					}
 				]
+			},
+			{
+				name: 'Get Involved',
+				path: '',
+				topLink: false,
+				subMenu: [
+					{
+						name: 'Donate',
+						path: '/donate'
+					},
+					{
+						name: 'Volunteer',
+						path: '/volunteer'
+					}
+				]
 			}
 			// {
 			// 	name: 'SINGLE_LINK_TEST',
