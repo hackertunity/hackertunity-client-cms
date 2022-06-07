@@ -6,15 +6,18 @@ import Content, { HTMLContent } from '../components/Content';
 import Layout from '../components/Layout';
 import PageBannerHead from '../components/page/pageBannerHead';
 import PageMainColumn from '../components/page/pageMainColumn';
-import DonateButton from '../components/get-involved/donate';
+import DonateButton from '../components/get-involved/donate-button';
+import VolunteerForm from '../components/get-involved/volunteer-form';
 
 export const DefaultPageTemplate = ({ title, image, content, contentComponent }) => {
 	const PageContent = contentComponent || Content;
 
-	const determineConditionalSupplement = () => {
+	const determinePageSupplement = () => {
 		if (title === 'Donate') {
 			// ADD DONATE BUTTON
 			return <DonateButton />;
+		} else if (title === 'Volunteer') {
+			return <VolunteerForm />;
 		} else {
 			return null;
 		}
@@ -27,7 +30,7 @@ export const DefaultPageTemplate = ({ title, image, content, contentComponent })
 			<PageMainColumn>
 				<PageContent className="content" content={content} />
 
-				{determineConditionalSupplement()}
+				{determinePageSupplement()}
 			</PageMainColumn>
 		</div>
 	);
