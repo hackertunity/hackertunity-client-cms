@@ -45,6 +45,9 @@ const VolunteerForm = () => {
 						required
 					/>
 				</div>
+				<div className="input-field">
+					<div data-netlify-recaptcha="true"></div>
+				</div>
 			</div>
 			<ul className="actions">
 				<li>
