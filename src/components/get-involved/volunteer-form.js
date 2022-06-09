@@ -15,7 +15,7 @@ const VolunteerForm = () => {
 	// STATE *
 	// HOW WOULD YOU HELP OR WHAT IS YOUR REL EXP?
 	return (
-		<form name="volunteer-contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+		<form name="volunteer-contact" method="POST" data-netlify="true">
 			<input type="hidden" name="form-name" value="volunteer-contact" />
 
 			<div className="fields">
@@ -45,9 +45,6 @@ const VolunteerForm = () => {
 						placeholder="How would you like to help? What is your relevant experience? *"
 						required
 					/>
-				</div>
-				<div className="input-field">
-					<div data-netlify-recaptcha="true"></div>
 				</div>
 			</div>
 			<ul className="actions">
