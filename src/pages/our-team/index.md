@@ -9,27 +9,29 @@ organization:
       teamMembers:
         - profileName: Stephanie Solis
           profileTitle: President & Founder
-          profileBlurb: Stephanie was born and raised in Lancaster, California and has a
-            bachelor’s degree in Information Systems from the University of
-            California, Riverside. She is also working on her Master's of
-            Science in Applied Artificial Intelligence through the University fo
-            San Diego. She enjoys karaoke and can be a bit loud and aggressive
-            if we're being honest. She really just wants equality and justice in
-            the world.
+          profileBlurb: >-
+            Pronouns: flexible (she/they/he). 
+
+            Stephanie was born and raised in Lancaster, California and has a bachelor’s degree in Information Systems from the University of California, Riverside. She is also working on her Master's of Science in Applied Artificial Intelligence through the University fo San Diego. She enjoys karaoke and can be a bit loud and aggressive if we're being honest. She really just wants equality and justice in the world.
           profilePicture: /img/headshot_steph.png
           showProfile: true
         - profileName: Tim Losee
           profileTitle: Vice President & Director of Technology
-          profileBlurb: Tim was born in the Antelope Valley and fought tooth and nail to
-            get into the tech industry. He now has over 9 years of experience as
-            a network engineer.
+          profileBlurb: "Pronouns: He/him. Tim was born in the Antelope Valley and fought
+            tooth and nail to get into the tech industry. He started by
+            answering phones in a call center and now has over 10 years of
+            experience as a network and telecommunications engineer. He is a
+            true Capricorn and in his spare time, has broadened his technical
+            portfolio to include UI design, AI integration, and coding in
+            JavaScript and Python. Tim likes to wind down by racing Corvettes,
+            singing Limp Bizkit on karaoke, and traveling the world. "
           profilePicture: /img/headshot_timl.png
         - profileName: Aaron Hampton
           profilePicture: /img/headshot_aaron.png
           profileTitle: Secretary & Co-Founder
-          profileBlurb: Aaron was born at a young age. He lives in a house and works when
-            he can. He’s a nice young man and sensitive, please don’t be too
-            loud around him.
+          profileBlurb: "Pronouns: He/him. Aaron was born at a young age. He lives in a
+            house and works when he can. He’s a nice young man and sensitive,
+            please don’t be too loud around him."
           showProfile: true
         - profileName: Jess Bumbaris
           profilePicture: /img/headshot_boyan.png
@@ -42,33 +44,32 @@ organization:
         - profileName: Emily Solis
           profilePicture: /img/headshot_emily.png
           profileTitle: Member of the Tech Committee
-          profileBlurb: Emily has volunteered with non-profit organizations since the age
-            of 18. She has made several professional career transitions, finding
-            success as a Licensed Nurse, Instructor of Nursing, Web Technology
-            Consultant, and Sales Director. Today she works full-time as a
-            Network Security Engineer and mentors students and entry-level
-            engineers. Emily lives in Nevada and splits her time between
-            Henderson and Lake Tahoe.
+          profileBlurb: "Pronouns: She/her. Emily has volunteered with non-profit
+            organizations since the age of 18. She has made several professional
+            career transitions, finding success as a Licensed Nurse, Instructor
+            of Nursing, Web Technology Consultant, and Sales Director. Today she
+            works full-time as a Network Security Engineer and mentors students
+            and entry-level engineers. Emily lives in Nevada and splits her time
+            between Henderson and Lake Tahoe."
           showProfile: true
         - profileName: Valerie Solis
           profilePicture: /img/headshot_val.png
           profileTitle: Member of the Tech Committee
-          profileBlurb: "Valerie is a Cisco certified network engineer based in Columbus,
-            Ohio. She believes the field of tech should be all inclusive and
-            envisions a world where nerds of all kinds work together in harmony
-            to build a better future. Also, she is a Sagittarius sun, Scorpio
-            moon, and Taurus Rising. Her favorite things are traveling, Netflix,
-            and snacks. Pronouns: She/her."
+          profileBlurb: >-
+            Pronouns: She/her.
+
+            Valerie is a cybersecurity project manager and has an IT background as a Cisco certified network engineer. She believes the field of tech should be all inclusive and envisions a world where nerds of all kinds work together in harmony to build a better future. Also, she is a Sagittarius sun, Scorpio moon, and Taurus Rising. Her favorite things are traveling, Netflix, and snacks. 
           showProfile: true
         - profileName: David Pineda
           profilePicture: /img/headshot_boyan.png
           profileTitle: Member of the Tech Committee
-          profileBlurb: David is one of those break things to see how it works kinda guys.
-            Whether that's fixing cars or fixing websites is more often than not
-            a good learned lesson. But with 11 years of web development
-            experience he's picked up a trick or two making sure that his
-            projects are functional and performant. Always looking for a good
-            challenge he sees the benefit in learning by doing.
+          profileBlurb: "Pronouns: He/him. David is one of those \"break things to see how
+            it works\" kinda guys. Whether that's fixing cars or fixing
+            websites, it's more often than not a good learned lesson. But with
+            11 years of web development experience, he's picked up a trick or
+            two, making sure that his projects are functional and performant.
+            Always looking for a good challenge, he sees the benefit in learning
+            by doing."
       showGroup: true
       groupType: committee
     - teamName: Public Relations Committee
