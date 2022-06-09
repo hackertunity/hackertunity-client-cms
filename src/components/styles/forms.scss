@@ -1,0 +1,27 @@
+.fields {
+	// border: 1px solid red;
+
+	.input-field {
+		width: 100%;
+
+		input,
+		textarea {
+			width: 100%;
+			padding: 15px;
+			margin-bottom: 20px;
+		}
+
+		textarea {
+			height: 150px;
+		}
+	}
+}
+
+ul.actions {
+	// border: 1px solid green;
+
+	input[type='submit'] {
+		padding: 15px;
+		margin-bottom: 20px;
+	}
+}

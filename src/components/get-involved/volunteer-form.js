@@ -40,7 +40,6 @@ const VolunteerForm = () => {
 						type="textarea"
 						name="message"
 						id="message"
-						style={{ width: '400px', height: '150px' }}
 						placeholder="How would you like to help? What is your relevant experience? *"
 						required
 					/>
