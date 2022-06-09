@@ -7,13 +7,6 @@ import React from 'react';
 // import SomeComp from './';
 
 const TrainingResources = ({ trainingCategories }) => {
-	console.log('>> TEST RENDER TRAINING_RESOURCES:', trainingCategories);
-
-	// const handleSomething = () => {
-	// 	console.log('>>');
-	// };
-	// <SomeComp handleSomething={handleSomething} />
-
 	return (
 		<div className="training-resources-categories">
 			{trainingCategories.map((group, i) => {
@@ -24,16 +17,10 @@ const TrainingResources = ({ trainingCategories }) => {
 						{group.trainingResources.map((entry, i) => {
 							return (
 								<div className="training-resource" key={i}>
-									<a
-										className="link-to-resource"
-										href={entry.resourceUrl}
-										target="_blank"
-									>
+									<a className="link-to-resource" href={entry.resourceUrl} target="_blank">
 										<h2>{entry.resourceTitle}</h2>
 									</a>
-									<div className="about-resource">
-										{entry.aboutResource}
-									</div>
+									<div className="about-resource">{entry.aboutResource}</div>
 								</div>
 							);
 						})}

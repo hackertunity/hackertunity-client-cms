@@ -7,8 +7,6 @@ import React from 'react';
 // import SomeComp from './';
 
 const DonateButton = () => {
-	console.log('>> TEST RENDER DONATE_BUTTON:');
-
 	return (
 		<>
 			<h3 style={{ display: 'inline', padding: '10px' }}>Donate on Paypal:</h3>
@@ -16,7 +14,7 @@ const DonateButton = () => {
 				style={{ display: 'inline', position: 'relative', top: '8px' }}
 				action="https://www.paypal.com/donate"
 				method="post"
-				target="_top"
+				target="_blank"
 			>
 				<input type="hidden" name="hosted_button_id" value="CG8RZWMAQ8DDG" />
 				<input
