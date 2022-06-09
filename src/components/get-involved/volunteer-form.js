@@ -15,7 +15,7 @@ const VolunteerForm = () => {
 	// STATE *
 	// HOW WOULD YOU HELP OR WHAT IS YOUR REL EXP?
 	return (
-		<form name="volunteer-contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+		<form name="volunteer-contact" action="POST" data-netlify-recaptcha="true" data-netlify="true">
 			<div className="fields">
 				<div className="input-field">
 					<input type="text" name="first-name" id="first-name" placeholder="First Name *" required />
@@ -50,7 +50,7 @@ const VolunteerForm = () => {
 			</div>
 			<ul className="actions">
 				<li>
-					<button type="submit">Send Message</button>
+					<input type="submit" value="Send Message" />
 				</li>
 			</ul>
 		</form>
