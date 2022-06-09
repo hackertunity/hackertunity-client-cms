@@ -15,18 +15,18 @@ const VolunteerForm = () => {
 	// STATE *
 	// HOW WOULD YOU HELP OR WHAT IS YOUR REL EXP?
 	return (
-		<form name="volunteer-contact" onSubmit="submit" method="POST" netlify data-netlify="true">
+		<form name="volunteer-contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
 			<input type="hidden" name="form-name" value="volunteer-contact" />
 
 			<div className="fields">
 				<div className="input-field">
-					<input type="text" name="first_name" id="first_name" placeholder="First Name *" required />
+					<input type="text" name="first-name" id="first-name" placeholder="First Name *" required />
 				</div>
 				<div className="input-field">
-					<input type="text" name="last_name" id="last_name" placeholder="Last Name *" required />
+					<input type="text" name="last-name" id="last-name" placeholder="Last Name *" required />
 				</div>
 				<div className="input-field">
-					<input type="phone" name="phone_number" id="phone_number" placeholder="Phone" />
+					<input type="phone" name="phone-number" id="phone-number" placeholder="Phone" />
 				</div>
 				<div className="input-field">
 					<input type="email" name="email" id="email" placeholder="Email *" required />
@@ -45,6 +45,9 @@ const VolunteerForm = () => {
 						placeholder="How would you like to help? What is your relevant experience? *"
 						required
 					/>
+				</div>
+				<div className="input-field">
+					<div data-netlify-recaptcha="true"></div>
 				</div>
 			</div>
 			<ul className="actions">
