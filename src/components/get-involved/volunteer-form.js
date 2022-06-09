@@ -50,7 +50,7 @@ const VolunteerForm = () => {
 			</div>
 			<ul className="actions">
 				<li>
-					<input type="submit" value="Send Message" />
+					<button type="submit">Send Message</button>
 				</li>
 			</ul>
 		</form>
