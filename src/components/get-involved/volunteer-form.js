@@ -16,6 +16,8 @@ const VolunteerForm = () => {
 	// HOW WOULD YOU HELP OR WHAT IS YOUR REL EXP?
 	return (
 		<form name="volunteer-contact" onSubmit="submit" method="POST" netlify data-netlify="true">
+			<input type="hidden" name="form-name" value="volunteer-contact" />
+
 			<div className="fields">
 				<div className="input-field">
 					<input type="text" name="first_name" id="first_name" placeholder="First Name *" required />
