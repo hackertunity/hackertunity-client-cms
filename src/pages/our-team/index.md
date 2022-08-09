@@ -78,7 +78,10 @@ organization:
         - profileName: Melissa Warr
           profilePicture: /img/headshot_boyan.png
           profileTitle: Director of Public Relations
-          profileBlurb: Melissa is also pretty cool, but she hasn't written up her bio yet.
+          profileBlurb: >-
+            Pronouns: She/her. 
+
+            Melissa has her bachelors in Political Science from California State University, Northridge and her Masters in Business Administration from Woodbury University. She currently works as a Portfolio Manager for IT Security. She has 10+ years in the financial industry but made the transition into Tech and has never looked back. In her down time she likes to go to the beach, shows, and spend time with her family.
     - teamName: Pet Committee
       groupType: contributors
 ---
