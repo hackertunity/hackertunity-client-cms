@@ -34,9 +34,13 @@ organization:
             please don’t be too loud around him."
           showProfile: true
         - profileName: Jess Bumbaris
-          profilePicture: /img/headshot_boyan.png
+          profilePicture: /img/headshot_jess.png
           profileTitle: Treasurer
-          profileBlurb: Jess is pretty cool, but she hasn't written up her bio yet.
+          profileBlurb: "Jess was born and raised in Chicago and is by far the least
+            qualified of the bunch [her words!] Her background is in English and
+            Creative Writing and she is working towards a Master’s Degree in
+            Public Service Leadership. This is the closest she can get to being
+            a STEM star. "
       showGroup: true
       groupType: board
     - teamName: Technology Committee
